@@ -1,4 +1,4 @@
-import isLessVariable from '../src/utils/isLessVariable';
+import isLessVariable from '../isLessVariable';
 import less from 'postcss-less';
 
 describe('isLessVariable', () => {
