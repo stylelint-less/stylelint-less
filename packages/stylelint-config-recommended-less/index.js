@@ -7,7 +7,12 @@ module.exports = {
 	customSyntax: postcssLess,
 	plugins: ['stylelint-less'],
 	rules: {
-		'at-rule-no-unknown': null,
+		'at-rule-no-unknown': [
+			true,
+			{
+				ignoreAtRules: ['plugin'],
+			},
+		],
 		'media-query-no-invalid': null,
 		'function-no-unknown': null,
 		'no-invalid-position-at-import-rule': null,
