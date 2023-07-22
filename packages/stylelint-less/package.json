@@ -1,0 +1,65 @@
+{
+  "name": "stylelint-less",
+  "version": "1.0.6",
+  "description": "A collection of Less specific rules for stylelint",
+  "keywords": [
+    "stylelint",
+    "stylelint-plugin",
+    "css",
+    "less"
+  ],
+  "homepage": "https://github.com/ssivanatarajan/stylelint-less#readme",
+  "bugs": {
+    "url": "https://github.com/ssivanatarajan/stylelint-less/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssivanatarajan/stylelint-less.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Sivantarajan",
+    "url": "https://github.com/ssivanatarajan/"
+  },
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  },
+  "prettier": "@stylelint/prettier-config",
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ]
+  },
+  "dependencies": {
+    "postcss-resolve-nested-selector": "^0.1.1",
+    "postcss-value-parser": "4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@stylelint/prettier-config": "^3.0.0",
+    "jest": "^29.6.1",
+    "postcss-less": "^6.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.26.3"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.14",
+    "stylelint": "^15.10.1"
+  }
+}
