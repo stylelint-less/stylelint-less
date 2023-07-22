@@ -23,15 +23,10 @@
   },
   "type": "commonjs",
   "main": "index.js",
-  "prettier": "@stylelint/prettier-config",
   "dependencies": {
     "postcss-less": "^6.0.0",
     "stylelint-config-recommended": "^13.0.0",
-    "stylelint-less": "link:../stylelint-less"
-  },
-  "devDependencies": {
-    "@stylelint/prettier-config": "^3.0.0",
-    "prettier": "^3.0.0"
+    "stylelint-less": "workspace:^"
   },
   "peerDependencies": {
     "postcss": "^8.3.3",
