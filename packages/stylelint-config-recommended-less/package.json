@@ -1,0 +1,45 @@
+{
+  "name": "stylelint-config-recommended-less",
+  "version": "1.0.3",
+  "description": "A sharable stylelint config for less",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "recommended",
+    "less"
+  ],
+  "homepage": "https://github.com/ssivanatarajan/stylelint-config-recommended-less#readme",
+  "bugs": {
+    "url": "https://github.com/ssivanatarajan/stylelint-config-recommended-less/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssivanatarajan/stylelint-config-recommended-less.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Sivantarajan",
+    "url": "https://github.com/ssivanatarajan/"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "prettier": "@stylelint/prettier-config",
+  "dependencies": {
+    "postcss-less": "^6.0.0",
+    "stylelint-config-recommended": "^13.0.0",
+    "stylelint-less": "link:../stylelint-less"
+  },
+  "devDependencies": {
+    "@stylelint/prettier-config": "^3.0.0",
+    "prettier": "^3.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.3.3",
+    "stylelint": "^15.10.2"
+  },
+  "peerDependenciesMeta": {
+    "postcss": {
+      "optional": true
+    }
+  }
+}
