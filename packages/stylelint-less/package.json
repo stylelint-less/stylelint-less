@@ -8,13 +8,14 @@
     "css",
     "less"
   ],
-  "homepage": "https://github.com/ssivanatarajan/stylelint-less#readme",
+  "homepage": "https://github.com/stylelint-less/stylelint-less#readme",
   "bugs": {
-    "url": "https://github.com/ssivanatarajan/stylelint-less/issues"
+    "url": "https://github.com/stylelint-less/stylelint-less/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ssivanatarajan/stylelint-less.git"
+    "url": "https://github.com/stylelint-less/stylelint-less.git",
+    "directory": "packages/stylelint-less"
   },
   "license": "MIT",
   "author": {

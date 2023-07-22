@@ -8,7 +8,11 @@
     "standard",
     "less"
   ],
-  "repository": "crazyurus/stylelint-config-standard-less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stylelint-less/stylelint-less.git",
+    "directory": "packages/stylelint-config-standard-less"
+  },
   "license": "MIT",
   "author": "Crazy Urus <crazyurus@vip.qq.com>",
   "type": "commonjs",

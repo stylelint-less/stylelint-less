@@ -8,13 +8,14 @@
     "recommended",
     "less"
   ],
-  "homepage": "https://github.com/ssivanatarajan/stylelint-config-recommended-less#readme",
+  "homepage": "https://github.com/stylelint-less/stylelint-less#readme",
   "bugs": {
-    "url": "https://github.com/ssivanatarajan/stylelint-config-recommended-less/issues"
+    "url": "https://github.com/stylelint-less/stylelint-less/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ssivanatarajan/stylelint-config-recommended-less.git"
+    "url": "https://github.com/stylelint-less/stylelint-less.git",
+    "directory": "packages/stylelint-config-recommended-less"
   },
   "license": "MIT",
   "author": {
