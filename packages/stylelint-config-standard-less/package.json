@@ -1,0 +1,32 @@
+{
+  "name": "stylelint-config-standard-less",
+  "version": "1.0.0",
+  "description": "The standard shareable LESS config for Stylelint",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "standard",
+    "less"
+  ],
+  "repository": "crazyurus/stylelint-config-standard-less",
+  "license": "MIT",
+  "author": "Crazy Urus <crazyurus@vip.qq.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "stylelint-config-recommended-less": "workspace:^",
+    "stylelint-config-standard": "^30.0.1"
+  },
+  "peerDependencies": {
+    "postcss": "^8.3.3",
+    "stylelint": "^15.0.0"
+  },
+  "peerDependenciesMeta": {
+    "postcss": {
+      "optional": true
+    }
+  }
+}

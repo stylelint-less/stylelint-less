@@ -33,6 +33,21 @@ importers:
         specifier: workspace:^
         version: link:../stylelint-less
 
+  packages/stylelint-config-standard-less:
+    dependencies:
+      postcss:
+        specifier: ^8.3.3
+        version: 8.4.14
+      stylelint:
+        specifier: ^15.0.0
+        version: 15.10.1
+      stylelint-config-recommended-less:
+        specifier: workspace:^
+        version: link:../stylelint-config-recommended-less
+      stylelint-config-standard:
+        specifier: ^30.0.1
+        version: 30.0.1(stylelint@15.10.1)
+
   packages/stylelint-less:
     dependencies:
       postcss:
@@ -4112,6 +4127,14 @@ packages:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
     dev: false
 
+  /stylelint-config-recommended@10.0.1(stylelint@15.10.1):
+    resolution: {integrity: sha512-TQ4xQ48tW4QSlODcti7pgSRqBZcUaBzuh0jPpfiMhwJKBPkqzTIAU+IrSWL/7BgXlOM90DjB7YaNgFpx8QWhuA==}
+    peerDependencies:
+      stylelint: ^15.0.0
+    dependencies:
+      stylelint: 15.10.1
+    dev: false
+
   /stylelint-config-recommended@13.0.0(stylelint@15.10.2):
     resolution: {integrity: sha512-EH+yRj6h3GAe/fRiyaoO2F9l9Tgg50AOFhaszyfov9v6ayXJ1IkSHwTxd7lB48FmOeSGDPLjatjO11fJpmarkQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
@@ -4119,6 +4142,15 @@ packages:
       stylelint: ^15.10.0
     dependencies:
       stylelint: 15.10.2
+    dev: false
+
+  /stylelint-config-standard@30.0.1(stylelint@15.10.1):
+    resolution: {integrity: sha512-NbeHOmpRQhjZh5XB1B/S4MLRWvz4xxAxeDBjzl0tY2xEcayNhLbaRGF0ZQzq+DQZLCcPpOHeS2Ru1ydbkhkmLg==}
+    peerDependencies:
+      stylelint: ^15.0.0
+    dependencies:
+      stylelint: 15.10.1
+      stylelint-config-recommended: 10.0.1(stylelint@15.10.1)
     dev: false
 
   /stylelint@15.10.1:
