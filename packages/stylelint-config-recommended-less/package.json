@@ -24,6 +24,9 @@
   },
   "type": "commonjs",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "postcss-less": "^6.0.0",
     "stylelint-config-recommended": "^13.0.0",
