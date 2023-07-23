@@ -9,5 +9,6 @@ module.exports = {
 				ignorePseudoClasses: ['global'],
 			},
 		],
+		'import-notation': 'string',
 	},
 };
