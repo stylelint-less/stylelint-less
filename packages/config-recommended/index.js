@@ -5,7 +5,7 @@ const postcssLess = require('postcss-less');
 module.exports = {
 	extends: ['stylelint-config-recommended'],
 	customSyntax: postcssLess,
-	plugins: ['stylelint-less'],
+	plugins: ['@stylelint-less/stylelint-plugin'],
 	rules: {
 		'at-rule-no-unknown': [
 			true,

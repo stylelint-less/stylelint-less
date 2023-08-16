@@ -1,7 +1,7 @@
 {
-  "name": "stylelint-config-recommended-less",
-  "version": "1.0.3",
-  "description": "A sharable stylelint config for less",
+  "name": "@stylelint-less/config-recommended",
+  "version": "1.0.0",
+  "description": "The recommended LESS config for Stylelint",
   "keywords": [
     "stylelint",
     "stylelint-config",
@@ -15,7 +15,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/stylelint-less/stylelint-less.git",
-    "directory": "packages/stylelint-config-recommended-less"
+    "directory": "packages/config-recommended"
   },
   "license": "MIT",
   "author": {
@@ -30,7 +30,7 @@
   "dependencies": {
     "postcss-less": "^6.0.0",
     "stylelint-config-recommended": "^13.0.0",
-    "stylelint-less": "workspace:^"
+    "@stylelint-less/stylelint-plugin": "workspace:^"
   },
   "peerDependencies": {
     "postcss": "^8.3.3",
