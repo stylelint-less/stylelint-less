@@ -1,6 +1,6 @@
 {
-  "name": "stylelint-less",
-  "version": "1.0.6",
+  "name": "@stylelint-less/stylelint-plugin",
+  "version": "1.0.0",
   "description": "A collection of Less specific rules for stylelint",
   "keywords": [
     "stylelint",
@@ -14,8 +14,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stylelint-less/stylelint-less.git",
-    "directory": "packages/stylelint-less"
+    "url": "https://github.com/stylelint-less/stylelint-plugin.git",
+    "directory": "packages/stylelint-plugin"
   },
   "license": "MIT",
   "author": {
