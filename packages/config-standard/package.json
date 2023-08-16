@@ -8,6 +8,10 @@
     "standard",
     "less"
   ],
+  "homepage": "https://github.com/stylelint-less/stylelint-less#readme",
+  "bugs": {
+    "url": "https://github.com/stylelint-less/stylelint-less/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/stylelint-less/stylelint-less.git",
