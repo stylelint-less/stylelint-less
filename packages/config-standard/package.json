@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config-standard-less",
+  "name": "@stylelint-less/config-standard",
   "version": "1.0.0",
   "description": "The standard shareable LESS config for Stylelint",
   "keywords": [
@@ -11,7 +11,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/stylelint-less/stylelint-less.git",
-    "directory": "packages/stylelint-config-standard-less"
+    "directory": "packages/config-standard"
   },
   "license": "MIT",
   "author": "Crazy Urus <crazyurus@vip.qq.com>",
@@ -21,7 +21,7 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-config-recommended-less": "workspace:^",
+    "@stylelint-less/config-recommended": "workspace:^",
     "stylelint-config-standard": "^34.0.0"
   },
   "peerDependencies": {

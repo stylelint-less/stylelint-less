@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	extends: ['stylelint-config-standard', 'stylelint-config-recommended-less'],
+	extends: ['stylelint-config-standard', '@stylelint-less/config-recommended'],
 	rules: {
 		'selector-pseudo-class-no-unknown': [
 			true,
