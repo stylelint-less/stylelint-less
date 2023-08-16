@@ -15,8 +15,11 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
 
-  packages/stylelint-config-recommended-less:
+  packages/config-recommended:
     dependencies:
+      '@stylelint-less/stylelint-plugin':
+        specifier: workspace:^
+        version: link:../stylelint-plugin
       postcss:
         specifier: ^8.3.3
         version: 8.4.28
@@ -29,26 +32,23 @@ importers:
       stylelint-config-recommended:
         specifier: ^13.0.0
         version: 13.0.0(stylelint@15.10.2)
-      stylelint-less:
-        specifier: workspace:^
-        version: link:../stylelint-less
 
-  packages/stylelint-config-standard-less:
+  packages/config-standard:
     dependencies:
+      '@stylelint-less/config-recommended':
+        specifier: workspace:^
+        version: link:../config-recommended
       postcss:
         specifier: ^8.3.3
         version: 8.4.28
       stylelint:
         specifier: ^15.0.0
         version: 15.10.2
-      stylelint-config-recommended-less:
-        specifier: workspace:^
-        version: link:../stylelint-config-recommended-less
       stylelint-config-standard:
         specifier: ^34.0.0
         version: 34.0.0(stylelint@15.10.2)
 
-  packages/stylelint-less:
+  packages/stylelint-plugin:
     dependencies:
       postcss:
         specifier: ^8.4.14
