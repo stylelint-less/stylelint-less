@@ -1,0 +1,25 @@
+### Version 0.0.0
+- chore: setup mono repo
+- add stylelint-less package
+- chore: move changelog back to its origin repo
+- add stylelint recommended less config
+- remove prettier from sub packages and fix target version in recommended config
+- add stylelint standard less config package
+- update repo information
+- format rollup config
+- add logo
+- add readme
+- add dependabot config
+- fix: path to tested function
+- Merge remote-tracking branch 'origin/main'
+- add ci workflow
+- Bump stylelint-config-standard from 30.0.1 to 34.0.0
+- only ignore plugin at rules
+- replace selector-class-pattern with its less counterpart
+- remove custom selector-class-pattern
+- export index.js only
+- prefers string import notation
+- Bump jest from 29.6.1 to 29.6.2
+- Bump prettier from 3.0.0 to 3.0.1
+- Bump @rollup/plugin-commonjs from 25.0.3 to 25.0.4
+- chore: update dependencies
