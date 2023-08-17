@@ -3,6 +3,7 @@
   "private": true,
   "prettier": "@stylelint/prettier-config",
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@stylelint/prettier-config": "^3.0.0",
     "prettier": "^3.0.2"
   }
