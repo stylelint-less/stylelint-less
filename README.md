@@ -1,6 +1,6 @@
 # stylelint-less
 
-The [stylelint](https://stylelint.io/) plugin and configurations for [Less](http://lesscss.org/).
+The [stylelint](https://stylelint.io/) plugin and configurations for [LESS](http://lesscss.org/).
 
 ## Usage
 
