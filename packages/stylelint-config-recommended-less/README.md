@@ -1,11 +1,11 @@
 # stylelint-config-recommended-less
 
-The recommended base LESS config for [stylelint](https://github.com/stylelint/stylelint).
+The recommended base [Less](https://lesscss.org/) config for [stylelint](https://github.com/stylelint/stylelint).
 
 - Uses the [postcss-less](https://github.com/shellscape/postcss-less) custom syntax
 - Uses the [stylelint-less](../stylelint-less) plugin
 - Extends [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended)
-- Configures the rules to be LESS specific
+- Configures the rules to be Less specific
 
 ## Installation
 

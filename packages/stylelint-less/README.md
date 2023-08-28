@@ -1,6 +1,6 @@
 # stylelint-less
 
-A collection of LESS specific rules for [stylelint](https://github.com/stylelint/stylelint).
+A collection of [Less](https://lesscss.org/) specific rules for [stylelint](https://github.com/stylelint/stylelint).
 
 ## Installation
 

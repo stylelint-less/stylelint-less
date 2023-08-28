@@ -1,6 +1,6 @@
 # stylelint-config-standard-less
 
-The standard shareable LESS config for [stylelint](https://github.com/stylelint/stylelint).
+The standard shareable [Less](https://lesscss.org/) config for [stylelint](https://github.com/stylelint/stylelint).
 
 This config extends:
 

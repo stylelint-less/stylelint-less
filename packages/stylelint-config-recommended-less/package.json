@@ -1,7 +1,7 @@
 {
   "name": "stylelint-config-recommended-less",
   "version": "1.0.3",
-  "description": "A sharable stylelint config for less",
+  "description": "The recommended Less config for Stylelint",
   "keywords": [
     "stylelint",
     "stylelint-config",
