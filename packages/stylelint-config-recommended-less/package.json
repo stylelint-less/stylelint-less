@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-recommended-less",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "The recommended Less config for Stylelint",
   "keywords": [
     "stylelint",
