@@ -1,6 +1,9 @@
 {
   "name": "stylelint-less-monorepo",
   "private": true,
+  "scripts": {
+    "changeset": "changeset"
+  },
   "prettier": "@stylelint/prettier-config",
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
