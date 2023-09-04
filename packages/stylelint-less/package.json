@@ -29,6 +29,7 @@
   ],
   "scripts": {
     "build": "rimraf dist && rollup -c",
+    "prepublishOnly": "pnpm run build",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "babel": {
