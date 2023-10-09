@@ -51,7 +51,7 @@
     "jest-preset-stylelint": "^6.2.0",
     "postcss-less": "^6.0.0",
     "rimraf": "^5.0.1",
-    "rollup": "^3.28.1",
+    "rollup": "^4.0.2",
     "stylelint": "^15.10.3"
   },
   "peerDependencies": {
