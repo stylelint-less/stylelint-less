@@ -1,6 +1,7 @@
 import stylelint from 'stylelint';
 import isStandardSyntaxAtRule from 'stylelint/lib/utils/isStandardSyntaxAtRule';
 import { isValidVariable, namespace } from '../../utils';
+import isEachFunction from '../../utils/isEachFunction';
 
 export const ruleName = namespace('no-duplicate-variables');
 
@@ -58,7 +59,7 @@ export default function (actual) {
 		root.walkAtRules((node) => {
 			//check duplicate in global variables
 			if (node.parent.type === 'root') {
-				if (!isStandardSyntaxAtRule(node)) {
+				if (!isStandardSyntaxAtRule(node) && !isEachFunction(node)) {
 					if (!isValidVariable(node)) {
 						stylelint.utils.report({
 							result,
