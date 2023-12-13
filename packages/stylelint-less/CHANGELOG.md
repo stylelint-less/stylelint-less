@@ -1,4 +1,4 @@
-## 2.0.0
+# stylelint-less
 
 ## 3.0.0
 
@@ -13,6 +13,8 @@
 ### Patch Changes
 
 - 23251e1: Update dependencies to the latest version
+
+## 2.0.0
 
 ### Major Changes
 
