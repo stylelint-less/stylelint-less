@@ -22,23 +22,28 @@
     "name": "Sivantarajan",
     "url": "https://github.com/ssivanatarajan/"
   },
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "files": [
     "index.js"
   ],
   "dependencies": {
     "postcss-less": "^6.0.0",
-    "stylelint-config-recommended": "^13.0.0",
+    "stylelint-config-recommended": "^14.0.0",
     "stylelint-less": "workspace:^"
   },
   "peerDependencies": {
     "postcss": "^8.3.3",
-    "stylelint": "^15.10.2"
+    "stylelint": "^16.0.2"
   },
   "peerDependenciesMeta": {
     "postcss": {
       "optional": true
+    }
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js"
     }
   }
 }
