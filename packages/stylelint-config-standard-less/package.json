@@ -22,11 +22,11 @@
   ],
   "dependencies": {
     "stylelint-config-recommended-less": "workspace:^",
-    "stylelint-config-standard": "^34.0.0"
+    "stylelint-config-standard": "^35.0.0"
   },
   "peerDependencies": {
     "postcss": "^8.3.3",
-    "stylelint": "^15.0.0"
+    "stylelint": "^16.0.2"
   },
   "peerDependenciesMeta": {
     "postcss": {
