@@ -1,5 +1,19 @@
 ## 2.0.0
 
+## 3.0.0
+
+### Major Changes
+
+- eafa8ea: Export ESM from packages
+
+### Minor Changes
+
+- 0ed0822: Update packages to stylelint 16
+
+### Patch Changes
+
+- 23251e1: Update dependencies to the latest version
+
 ### Major Changes
 
 - 09ae6bb: Move all the repositories into a monorepo (under the stylelint-less org)
