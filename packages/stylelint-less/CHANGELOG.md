@@ -1,5 +1,11 @@
 # stylelint-less
 
+## 3.0.1
+
+### Patch Changes
+
+- f10f008: Fix compatibility with Stylelint 16
+
 ## 3.0.0
 
 ### Major Changes

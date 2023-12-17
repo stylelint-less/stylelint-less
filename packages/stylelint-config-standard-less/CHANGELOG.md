@@ -1,5 +1,13 @@
 # stylelint-config-standard-less
 
+## 3.0.1
+
+### Patch Changes
+
+- f10f008: Fix compatibility with Stylelint 16
+- Updated dependencies [f10f008]
+  - stylelint-config-recommended-less@3.0.1
+
 ## 3.0.0
 
 ### Major Changes
