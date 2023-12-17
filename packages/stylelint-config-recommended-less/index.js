@@ -1,6 +1,8 @@
-import postcssLess from 'postcss-less';
+'use strict';
 
-export default {
+const postcssLess = require('postcss-less');
+
+module.exports = {
 	extends: ['stylelint-config-recommended'],
 	customSyntax: postcssLess,
 	plugins: ['stylelint-less'],

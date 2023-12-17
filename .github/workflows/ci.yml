@@ -26,4 +26,5 @@ jobs:
           version: 8.12.1
 
       - run: pnpm i
+      - run: pnpm -r build
       - run: pnpm -r test

@@ -22,7 +22,7 @@
     "name": "Sivantarajan",
     "url": "https://github.com/ssivanatarajan/"
   },
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "files": [
     "index.js"
@@ -39,11 +39,6 @@
   "peerDependenciesMeta": {
     "postcss": {
       "optional": true
-    }
-  },
-  "exports": {
-    ".": {
-      "import": "./index.js"
     }
   }
 }
