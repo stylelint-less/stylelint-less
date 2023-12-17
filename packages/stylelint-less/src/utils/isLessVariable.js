@@ -1,4 +1,13 @@
-import hasBlock from 'stylelint/lib/utils/hasBlock';
+/**
+ * Check if a statement has an block (empty or otherwise).
+ *
+ * @param {import('postcss').Container} statement
+ * @return {boolean} True if `statement` has a block (empty or otherwise)
+ * @package stylelint
+ */
+function hasBlock(statement) {
+	return statement.nodes !== undefined;
+}
 
 /**
  * Reference: pulled from stylelint

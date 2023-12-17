@@ -1,6 +1,5 @@
 import stylelint from 'stylelint';
-import isStandardSyntaxAtRule from 'stylelint/lib/utils/isStandardSyntaxAtRule';
-import { isValidVariable, namespace } from '../../utils';
+import { isValidVariable, namespace, isStandardSyntaxAtRule } from '../../utils';
 
 export const ruleName = namespace('no-duplicate-variables');
 
