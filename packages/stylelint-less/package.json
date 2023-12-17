@@ -22,13 +22,14 @@
     "name": "Sivantarajan",
     "url": "https://github.com/ssivanatarajan/"
   },
-  "type": "module",
+  "type": "commonjs",
   "main": "dist/index.js",
   "files": [
-    "src/**/*.js",
-    "!**/__tests__/*"
+    "dist"
   ],
   "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "prepublishOnly": "pnpm run build",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "babel": {
@@ -44,19 +45,17 @@
   "devDependencies": {
     "@babel/core": "^7.23.6",
     "@babel/preset-env": "^7.23.6",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "jest": "^29.7.0",
     "jest-preset-stylelint": "^7.0.0",
     "postcss-less": "^6.0.0",
     "rimraf": "^5.0.5",
+    "rollup": "^4.9.1",
     "stylelint": "^16.0.2"
   },
   "peerDependencies": {
     "postcss": "^8.4.31",
     "stylelint": "^16.0.2"
-  },
-  "exports": {
-    ".": {
-      "import": "./src/index.js"
-    }
   }
 }
