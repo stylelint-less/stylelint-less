@@ -43,7 +43,7 @@
     "postcss-value-parser": "4.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.6",
+    "@babel/core": "^7.24.4",
     "@babel/preset-env": "^7.23.9",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
