@@ -1,7 +1,7 @@
-export { default as namespace } from './namespace';
-export { default as isValidVariable } from './isValidVariable';
-export { default as isLessVariable } from './isLessVariable';
-export { default as isHexColor } from './isHexColor';
-export { default as isIgnoredFunction } from './isIgnoredFunction';
-export { default as isStandardSyntaxAtRule } from './isStandardSyntaxAtRule';
-export { default as isValidHex } from './isValidHex';
+export { default as namespace } from './namespace.js';
+export { default as isValidVariable } from './isValidVariable.js';
+export { default as isLessVariable } from './isLessVariable.js';
+export { default as isHexColor } from './isHexColor.js';
+export { default as isIgnoredFunction } from './isIgnoredFunction.js';
+export { default as isStandardSyntaxAtRule } from './isStandardSyntaxAtRule.js';
+export { default as isValidHex } from './isValidHex.js';

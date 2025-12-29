@@ -1,6 +1,6 @@
 import stylelint from 'stylelint';
 import valueParser from 'postcss-value-parser';
-import { isHexColor, isIgnoredFunction, isValidVariable, namespace, isStandardSyntaxAtRule } from '../../utils';
+import { isHexColor, isIgnoredFunction, isValidVariable, namespace, isStandardSyntaxAtRule } from '../../utils/index.js';
 
 export const ruleName = namespace('color-no-hex');
 
@@ -13,7 +13,11 @@ export const messages = stylelint.utils.ruleMessages(ruleName, {
 	},
 });
 
-export default function (actual) {
+const meta = {
+	url: 'https://github.com/stylelint-less/stylelint-less/blob/main/packages/stylelint-less/src/rules/color-no-hex',
+};
+
+const rule = (actual) => {
 	return function (root, result) {
 		const validOptions = stylelint.utils.validateOptions(result, ruleName, { actual });
 
@@ -51,3 +55,9 @@ export default function (actual) {
 		});
 	};
 }
+
+rule.ruleName = ruleName;
+rule.messages = messages;
+rule.meta = meta;
+
+export default rule

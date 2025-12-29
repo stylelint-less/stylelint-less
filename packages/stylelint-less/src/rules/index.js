@@ -1,7 +1,7 @@
-import colorNoHex from './color-no-hex';
-import colorNoInvalidHex from './color-no-invalid-hex';
-import colorHexCase from './color-hex-case';
-import noDuplicateVariables from './no-duplicate-variables';
+import colorNoHex from './color-no-hex/index.js';
+import colorNoInvalidHex from './color-no-invalid-hex/index.js';
+import colorHexCase from './color-hex-case/index.js';
+import noDuplicateVariables from './no-duplicate-variables/index.js';
 
 export default {
 	'color-no-hex': colorNoHex,

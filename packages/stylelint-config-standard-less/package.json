@@ -15,8 +15,10 @@
   },
   "license": "MIT",
   "author": "Crazy Urus <crazyurus@vip.qq.com>",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
   "files": [
     "index.js"
   ],
@@ -26,7 +28,7 @@
   },
   "peerDependencies": {
     "postcss": "^8.3.3",
-    "stylelint": "^16.0.2"
+    "stylelint": "^16.0.2 || ^17.0.0"
   },
   "peerDependenciesMeta": {
     "postcss": {
