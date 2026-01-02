@@ -1,21 +1,20 @@
 import stylelint from 'stylelint';
-import { isValidVariable, namespace } from '../../utils';
 import isEachFunction from '../../utils/isEachFunction';
 import { isValidVariable, namespace, isStandardSyntaxAtRule } from '../../utils';
 
 export const ruleName = namespace('no-duplicate-variables');
 
 export const messages = stylelint.utils.ruleMessages(ruleName, {
-	rejected: function(prop) {
+	rejected: function (prop) {
 		return `unexpected duplicate property in "${prop}"`;
 	},
-	invalid: function(variableName) {
+	invalid: function (variableName) {
 		return `Unexpected Invalid variable  "${variableName}"`;
 	},
 });
 
-export default function(actual) {
-	return function(root, result) {
+export default function (actual) {
+	return function (root, result) {
 		const validOptions = stylelint.utils.validateOptions(result, ruleName, { actual });
 
 		if (!validOptions) {
@@ -27,7 +26,7 @@ export default function(actual) {
 		root.walkRules((rule) => {
 			let variables = [];
 
-			rule.nodes.forEach(function(node) {
+			rule.nodes.forEach(function (node) {
 				if (node.type === 'atrule') {
 					if (!isStandardSyntaxAtRule(node)) {
 						if (!isValidVariable(node)) {

@@ -1,7 +1,7 @@
 /**
- * Check whether the atrule is valid less variable.
+ * Check whether atrule is valid less variable.
  *
- * @param {import('postcss').AtRule} atRule
+ * @param {import('postcss').AtRule & { mixin?: boolean }} atRule
  * @returns {boolean}
  */
 export default function isValidVariable(atRule) {
