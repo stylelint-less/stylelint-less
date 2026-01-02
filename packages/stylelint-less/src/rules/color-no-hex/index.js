@@ -23,6 +23,7 @@ const meta = {
 	url: 'https://github.com/stylelint-less/stylelint-less/blob/main/packages/stylelint-less/src/rules/color-no-hex',
 };
 
+/** @type {import('stylelint').Rule} */
 const rule = (actual) => {
 	return function (root, result) {
 		const validOptions = stylelint.utils.validateOptions(result, ruleName, { actual });

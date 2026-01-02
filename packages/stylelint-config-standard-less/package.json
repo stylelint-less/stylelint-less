@@ -17,9 +17,11 @@
   "author": "Crazy Urus <crazyurus@vip.qq.com>",
   "type": "module",
   "exports": {
-    ".": "./index.js"
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
   },
-  "types": "index.d.ts",
   "files": [
     "index.js",
     "index.d.ts"
