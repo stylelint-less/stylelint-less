@@ -2,12 +2,7 @@
   "name": "stylelint-config-standard-less",
   "version": "3.0.1",
   "description": "The standard Less config for Stylelint",
-  "keywords": [
-    "stylelint",
-    "stylelint-config",
-    "standard",
-    "less"
-  ],
+  "keywords": ["stylelint", "stylelint-config", "standard", "less"],
   "repository": {
     "type": "git",
     "url": "https://github.com/stylelint-less/stylelint-less.git",
@@ -15,13 +10,12 @@
   },
   "license": "MIT",
   "author": "Crazy Urus <crazyurus@vip.qq.com>",
-  "type": "commonjs",
-  "main": "index.js",
   "types": "index.d.ts",
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": ["index.js", "index.d.ts"],
   "scripts": {
     "lint": "tsc --noEmit"
   },
@@ -34,7 +28,7 @@
   },
   "peerDependencies": {
     "postcss": "^8.3.3",
-    "stylelint": "^16.0.2"
+    "stylelint": "^16.0.2 || ^17.0.0"
   },
   "peerDependenciesMeta": {
     "postcss": {

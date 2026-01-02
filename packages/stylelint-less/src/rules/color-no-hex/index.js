@@ -6,28 +6,32 @@ import {
 	isValidVariable,
 	namespace,
 	isStandardSyntaxAtRule,
-} from '../../utils';
+} from '../../utils/index.js';
 
 export const ruleName = namespace('color-no-hex');
 
 export const messages = stylelint.utils.ruleMessages(ruleName, {
-	rejected: function (hex) {
+	rejected: function(hex) {
 		return `Unexpected hex color "${hex}"`;
 	},
-	invalid: function (variableName) {
+	invalid: function(variableName) {
 		return `invalid variable "${variableName}"`;
 	},
 });
 
-export default function (actual) {
-	return function (root, result) {
+const meta = {
+	url: 'https://github.com/stylelint-less/stylelint-less/blob/main/packages/stylelint-less/src/rules/color-no-hex',
+};
+
+const rule = (actual) => {
+	return function(root, result) {
 		const validOptions = stylelint.utils.validateOptions(result, ruleName, { actual });
 
 		if (!validOptions) {
 			return;
 		}
 
-		root.walkAtRules(function (node) {
+		root.walkAtRules(function(node) {
 			if (!isStandardSyntaxAtRule(node)) {
 				if (!isValidVariable(node)) {
 					stylelint.utils.report({
@@ -57,3 +61,9 @@ export default function (actual) {
 		});
 	};
 }
+
+rule.ruleName = ruleName;
+rule.messages = messages;
+rule.meta = meta;
+
+export default rule

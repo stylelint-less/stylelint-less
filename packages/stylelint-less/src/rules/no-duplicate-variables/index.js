@@ -1,20 +1,24 @@
 import stylelint from 'stylelint';
-import isEachFunction from '../../utils/isEachFunction';
-import { isValidVariable, namespace, isStandardSyntaxAtRule } from '../../utils';
+import isEachFunction from '../../utils/isEachFunction.js';
+import { isValidVariable, namespace, isStandardSyntaxAtRule } from '../../utils/index.js';
 
 export const ruleName = namespace('no-duplicate-variables');
 
 export const messages = stylelint.utils.ruleMessages(ruleName, {
-	rejected: function (prop) {
+	rejected: function(prop) {
 		return `unexpected duplicate property in "${prop}"`;
 	},
-	invalid: function (variableName) {
+	invalid: function(variableName) {
 		return `Unexpected Invalid variable  "${variableName}"`;
 	},
 });
 
-export default function (actual) {
-	return function (root, result) {
+const meta = {
+	url: 'https://github.com/stylelint-less/stylelint-less/blob/main/packages/stylelint-less/src/rules/no-duplicate-variables',
+};
+
+const rule = (actual) => {
+	return function(root, result) {
 		const validOptions = stylelint.utils.validateOptions(result, ruleName, { actual });
 
 		if (!validOptions) {
@@ -26,7 +30,7 @@ export default function (actual) {
 		root.walkRules((rule) => {
 			let variables = [];
 
-			rule.nodes.forEach(function (node) {
+			rule.nodes.forEach(function(node) {
 				if (node.type === 'atrule') {
 					if (!isStandardSyntaxAtRule(node)) {
 						if (!isValidVariable(node)) {
@@ -85,3 +89,9 @@ export default function (actual) {
 		});
 	};
 }
+
+rule.ruleName = ruleName;
+rule.messages = messages;
+rule.meta = meta;
+
+export default rule
