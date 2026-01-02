@@ -46,7 +46,7 @@
   },
   "peerDependencies": {
     "postcss": "^8.3.3",
-    "stylelint": "^16.0.2 || ^17.0.0"
+    "stylelint": "^16.26.1 || ^17.0.0"
   },
   "peerDependenciesMeta": {
     "postcss": {
