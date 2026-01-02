@@ -2,8 +2,7 @@
 
 const { getTestRule } = require('jest-preset-stylelint');
 
-// FIXME: This is a workaround until the preset supports esm
-global.testRule = getTestRule({ plugins: ['./dist'] });
+global.testRule = getTestRule({ plugins: ['./src'] });
 
 // Inspired by https://www.npmjs.com/package/dedent-tag
 global.dedent = function dedent(strings) {

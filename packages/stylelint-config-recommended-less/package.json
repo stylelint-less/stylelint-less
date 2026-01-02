@@ -22,9 +22,13 @@
     "name": "Sivantarajan",
     "url": "https://github.com/ssivanatarajan/"
   },
-  "type": "commonjs",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
+  },
   "files": [
     "index.js",
     "index.d.ts"
@@ -42,7 +46,7 @@
   },
   "peerDependencies": {
     "postcss": "^8.3.3",
-    "stylelint": "^16.0.2"
+    "stylelint": "^16.26.1 || ^17.0.0"
   },
   "peerDependenciesMeta": {
     "postcss": {

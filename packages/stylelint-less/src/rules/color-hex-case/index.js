@@ -7,7 +7,7 @@ import {
 	isValidVariable,
 	namespace,
 	isStandardSyntaxAtRule,
-} from '../../utils';
+} from '../../utils/index.js';
 
 export const ruleName = namespace('color-hex-case');
 
@@ -20,7 +20,12 @@ export const messages = stylelint.utils.ruleMessages(ruleName, {
 	},
 });
 
-export default function (expectation) {
+const meta = {
+	url: 'https://github.com/stylelint-less/stylelint-less/blob/main/packages/stylelint-less/src/rules/color-hex-case',
+};
+
+/** @type {import('stylelint').Rule} */
+const rule = (expectation) => {
 	return function (root, result) {
 		const validOptions = stylelint.utils.validateOptions(result, ruleName, {
 			actual: expectation,
@@ -66,4 +71,10 @@ export default function (expectation) {
 			}
 		});
 	};
-}
+};
+
+rule.ruleName = ruleName;
+rule.messages = messages;
+rule.meta = meta;
+
+export default rule;

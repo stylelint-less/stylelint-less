@@ -1,6 +1,10 @@
 import stylelint from 'stylelint';
-import isEachFunction from '../../utils/isEachFunction';
-import { isValidVariable, namespace, isStandardSyntaxAtRule } from '../../utils';
+import {
+	isValidVariable,
+	namespace,
+	isStandardSyntaxAtRule,
+	isEachFunction,
+} from '../../utils/index.js';
 
 export const ruleName = namespace('no-duplicate-variables');
 
@@ -13,7 +17,12 @@ export const messages = stylelint.utils.ruleMessages(ruleName, {
 	},
 });
 
-export default function (actual) {
+const meta = {
+	url: 'https://github.com/stylelint-less/stylelint-less/blob/main/packages/stylelint-less/src/rules/no-duplicate-variables',
+};
+
+/** @type {import('stylelint').Rule} */
+const rule = (actual) => {
 	return function (root, result) {
 		const validOptions = stylelint.utils.validateOptions(result, ruleName, { actual });
 
@@ -84,4 +93,10 @@ export default function (actual) {
 			}
 		});
 	};
-}
+};
+
+rule.ruleName = ruleName;
+rule.messages = messages;
+rule.meta = meta;
+
+export default rule;
