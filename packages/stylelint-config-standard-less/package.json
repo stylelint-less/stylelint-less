@@ -17,9 +17,17 @@
   "author": "Crazy Urus <crazyurus@vip.qq.com>",
   "type": "commonjs",
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
+  "scripts": {
+    "lint": "tsc --noEmit"
+  },
+  "lint-staged": {
+    "*.{js,cjs,mjs}": "sh -c 'tsc --noEmit'"
+  },
   "dependencies": {
     "stylelint-config-recommended-less": "workspace:^",
     "stylelint-config-standard": "^36.0.0"

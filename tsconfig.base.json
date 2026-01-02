@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"module": "node16",
+		"moduleResolution": "node16",
+		"target": "es2022",
+		"lib": ["es2023"],
+		"checkJs": true,
+		"allowJs": true,
+		"noEmit": true,
+		"strict": false,
+		"noImplicitAny": false,
+		"baseUrl": ".",
+		"types": ["node"]
+	}
+}

@@ -10,10 +10,13 @@ importers:
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.1
-        version: 2.29.8(@types/node@25.0.3)
+        version: 2.29.8(@types/node@24.10.4)
       '@stylelint/prettier-config':
         specifier: ^4.0.0
         version: 4.0.0(prettier@3.7.4)
+      '@types/node':
+        specifier: ^24.10.4
+        version: 24.10.4
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -26,6 +29,9 @@ importers:
       prettier-plugin-packagejson:
         specifier: ^2.5.20
         version: 2.5.20(prettier@3.7.4)
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
 
   packages/stylelint-config-recommended-less:
     dependencies:
@@ -37,10 +43,10 @@ importers:
         version: 6.0.0(postcss@8.5.6)
       stylelint:
         specifier: ^16.0.2
-        version: 16.26.1
+        version: 16.26.1(typescript@5.9.3)
       stylelint-config-recommended:
         specifier: ^14.0.0
-        version: 14.0.1(stylelint@16.26.1)
+        version: 14.0.1(stylelint@16.26.1(typescript@5.9.3))
       stylelint-less:
         specifier: workspace:^
         version: link:../stylelint-less
@@ -52,13 +58,13 @@ importers:
         version: 8.5.6
       stylelint:
         specifier: ^16.0.2
-        version: 16.26.1
+        version: 16.26.1(typescript@5.9.3)
       stylelint-config-recommended-less:
         specifier: workspace:^
         version: link:../stylelint-config-recommended-less
       stylelint-config-standard:
         specifier: ^36.0.0
-        version: 36.0.1(stylelint@16.26.1)
+        version: 36.0.1(stylelint@16.26.1(typescript@5.9.3))
 
   packages/stylelint-less:
     dependencies:
@@ -84,6 +90,12 @@ importers:
       '@rollup/plugin-node-resolve':
         specifier: ^16.0.3
         version: 16.0.3(rollup@4.54.0)
+      '@types/jest':
+        specifier: ^30.0.0
+        version: 30.0.0
+      '@types/postcss-less':
+        specifier: ^4.0.7
+        version: 4.0.7
       jest:
         specifier: ^30.2.0
         version: 30.2.0(@types/node@25.0.3)
@@ -101,7 +113,7 @@ importers:
         version: 4.54.0
       stylelint:
         specifier: ^16.0.2
-        version: 16.26.1
+        version: 16.26.1(typescript@5.9.3)
 
 packages:
 
@@ -1132,11 +1144,20 @@ packages:
   '@types/istanbul-reports@3.0.4':
     resolution: {integrity: sha512-pk2B1NWalF9toCRu6gjBzR69syFjP4Od8WRAX+0mmf9lAjCRicLOWc+ZrxZHx/0XRjotgkF9t6iaMJ+aXcOdZQ==}
 
+  '@types/jest@30.0.0':
+    resolution: {integrity: sha512-XTYugzhuwqWjws0CVz8QpM36+T+Dz5mTEBKhNs/esGLnCIlGdRy+Dq78NRjd7ls7r8BC8ZRMOrKlkO1hU0JOwA==}
+
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
+  '@types/node@24.10.4':
+    resolution: {integrity: sha512-vnDVpYPMzs4wunl27jHrfmwojOGKya0xyM3sH+UE5iv5uPS6vX7UIoh6m+vQc5LGBq52HBKPIn/zcSZVzeDEZg==}
+
   '@types/node@25.0.3':
     resolution: {integrity: sha512-W609buLVRVmeW693xKfzHeIV6nJGGz98uCPfeXI1ELMLXVeKYZ9m15fAMSaUPBHYLGFsVRcMmSCksQOrZV9BYA==}
+
+  '@types/postcss-less@4.0.7':
+    resolution: {integrity: sha512-trNnU5PNmvMGysyge5Tc7W4CpaU+HHVu9XcGFX9eBlIGcg+NJP6lLJcUna6jjh8/TMjAe0k5mY0+jNRkZLYoaQ==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -2626,6 +2647,11 @@ packages:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
     engines: {node: '>=10'}
 
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   undici-types@7.16.0:
     resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
 
@@ -3499,7 +3525,7 @@ snapshots:
     dependencies:
       '@changesets/types': 6.1.0
 
-  '@changesets/cli@2.29.8(@types/node@25.0.3)':
+  '@changesets/cli@2.29.8(@types/node@24.10.4)':
     dependencies:
       '@changesets/apply-release-plan': 7.0.14
       '@changesets/assemble-release-plan': 6.0.9
@@ -3515,7 +3541,7 @@ snapshots:
       '@changesets/should-skip-package': 0.1.2
       '@changesets/types': 6.1.0
       '@changesets/write': 0.4.0
-      '@inquirer/external-editor': 1.0.3(@types/node@25.0.3)
+      '@inquirer/external-editor': 1.0.3(@types/node@24.10.4)
       '@manypkg/get-packages': 1.1.3
       ansi-colors: 4.1.3
       ci-info: 3.9.0
@@ -3649,12 +3675,12 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@inquirer/external-editor@1.0.3(@types/node@25.0.3)':
+  '@inquirer/external-editor@1.0.3(@types/node@24.10.4)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.1
     optionalDependencies:
-      '@types/node': 25.0.3
+      '@types/node': 24.10.4
 
   '@isaacs/balanced-match@4.0.1': {}
 
@@ -4076,11 +4102,24 @@ snapshots:
     dependencies:
       '@types/istanbul-lib-report': 3.0.3
 
+  '@types/jest@30.0.0':
+    dependencies:
+      expect: 30.2.0
+      pretty-format: 30.2.0
+
   '@types/node@12.20.55': {}
+
+  '@types/node@24.10.4':
+    dependencies:
+      undici-types: 7.16.0
 
   '@types/node@25.0.3':
     dependencies:
       undici-types: 7.16.0
+
+  '@types/postcss-less@4.0.7':
+    dependencies:
+      postcss: 8.5.6
 
   '@types/resolve@1.20.2': {}
 
@@ -4382,12 +4421,14 @@ snapshots:
     dependencies:
       browserslist: 4.28.1
 
-  cosmiconfig@9.0.0:
+  cosmiconfig@9.0.0(typescript@5.9.3):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
       js-yaml: 4.1.1
       parse-json: 5.2.0
+    optionalDependencies:
+      typescript: 5.9.3
 
   cross-spawn@7.0.6:
     dependencies:
@@ -5552,16 +5593,16 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  stylelint-config-recommended@14.0.1(stylelint@16.26.1):
+  stylelint-config-recommended@14.0.1(stylelint@16.26.1(typescript@5.9.3)):
     dependencies:
-      stylelint: 16.26.1
+      stylelint: 16.26.1(typescript@5.9.3)
 
-  stylelint-config-standard@36.0.1(stylelint@16.26.1):
+  stylelint-config-standard@36.0.1(stylelint@16.26.1(typescript@5.9.3)):
     dependencies:
-      stylelint: 16.26.1
-      stylelint-config-recommended: 14.0.1(stylelint@16.26.1)
+      stylelint: 16.26.1(typescript@5.9.3)
+      stylelint-config-recommended: 14.0.1(stylelint@16.26.1(typescript@5.9.3))
 
-  stylelint@16.26.1:
+  stylelint@16.26.1(typescript@5.9.3):
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-syntax-patches-for-csstree': 1.0.22
@@ -5571,7 +5612,7 @@ snapshots:
       '@dual-bundle/import-meta-resolve': 4.2.1
       balanced-match: 2.0.0
       colord: 2.9.3
-      cosmiconfig: 9.0.0
+      cosmiconfig: 9.0.0(typescript@5.9.3)
       css-functions-list: 3.2.3
       css-tree: 3.1.0
       debug: 4.4.3
@@ -5660,6 +5701,8 @@ snapshots:
   type-detect@4.0.8: {}
 
   type-fest@0.21.3: {}
+
+  typescript@5.9.3: {}
 
   undici-types@7.16.0: {}
 

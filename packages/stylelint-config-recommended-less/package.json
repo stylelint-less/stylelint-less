@@ -24,9 +24,17 @@
   },
   "type": "commonjs",
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
+  "scripts": {
+    "lint": "tsc --noEmit"
+  },
+  "lint-staged": {
+    "*.{js,cjs,mjs}": "sh -c 'tsc --noEmit'"
+  },
   "dependencies": {
     "postcss-less": "^6.0.0",
     "stylelint-config-recommended": "^14.0.0",
