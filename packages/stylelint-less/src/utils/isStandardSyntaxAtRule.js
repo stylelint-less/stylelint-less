@@ -6,23 +6,23 @@
  * @package stylelint
  */
 export default function isStandardSyntaxAtRule(atRule) {
-  // Ignore scss `@content` inside mixins
-  if (!atRule.nodes && atRule.params === '') {
-    return false;
-  }
+	// Ignore scss `@content` inside mixins
+	if (!atRule.nodes && atRule.params === '') {
+		return false;
+	}
 
-  // Ignore Less mixins
-  if ('mixin' in atRule && atRule.mixin) {
-    return false;
-  }
+	// Ignore Less mixins
+	if ('mixin' in atRule && atRule.mixin) {
+		return false;
+	}
 
-  // Ignore Less detached ruleset `@detached-ruleset: { background: red; }; .top { @detached-ruleset(); }`
-  if (
-    ('variable' in atRule && atRule.variable) ||
-    (!atRule.nodes && atRule.raws.afterName === '' && atRule.params[0] === '(')
-  ) {
-    return false;
-  }
+	// Ignore Less detached ruleset `@detached-ruleset: { background: red; }; .top { @detached-ruleset(); }`
+	if (
+		('variable' in atRule && atRule.variable) ||
+		(!atRule.nodes && atRule.raws.afterName === '' && atRule.params[0] === '(')
+	) {
+		return false;
+	}
 
-  return true;
+	return true;
 }

@@ -29,8 +29,8 @@
   ],
   "scripts": {
     "build": "rimraf dist && rollup -c",
-    "prepublishOnly": "pnpm run build",
     "prepare": "pnpm run build",
+    "prepublishOnly": "pnpm run build",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "lint-staged": {
@@ -41,6 +41,7 @@
       "@babel/env"
     ]
   },
+  "prettier": "@stylelint/prettier-config",
   "dependencies": {
     "postcss-resolve-nested-selector": "^0.1.1",
     "postcss-value-parser": "4.2.0"

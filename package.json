@@ -2,6 +2,7 @@
   "name": "stylelint-less-monorepo",
   "private": true,
   "scripts": {
+    "format": "prettier --write .",
     "prepare": "husky"
   },
   "lint-staged": {

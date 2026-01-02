@@ -9,13 +9,21 @@ Can be `lower` or `upper`.
 ### lower
 
 ```less
-a { color: #fff; } // ✓ ok
-a { color: #FFF; } // ✗ error
+a {
+  color: #fff;
+} // ✓ ok
+a {
+  color: #fff;
+} // ✗ error
 ```
 
 ### upper
 
 ```less
-a { color: #FFF; } // ✓ ok
-a { color: #fff; } // ✗ error
+a {
+  color: #fff;
+} // ✓ ok
+a {
+  color: #fff;
+} // ✗ error
 ```
