@@ -1,6 +1,11 @@
 import stylelint from 'stylelint';
 import valueParser from 'postcss-value-parser';
-import { isValidVariable, namespace, isStandardSyntaxAtRule, isValidHex } from '../../utils/index.js';
+import {
+	isValidVariable,
+	namespace,
+	isStandardSyntaxAtRule,
+	isValidHex,
+} from '../../utils/index.js';
 
 export const ruleName = namespace('color-no-invalid-hex');
 
@@ -61,10 +66,10 @@ const rule = (actual) => {
 			}
 		});
 	};
-}
+};
 
 rule.ruleName = ruleName;
 rule.messages = messages;
 rule.meta = meta;
 
-export default rule
+export default rule;

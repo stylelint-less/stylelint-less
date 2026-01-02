@@ -2,7 +2,12 @@
   "name": "stylelint-less",
   "version": "3.0.1",
   "description": "A collection of Less specific rules for stylelint",
-  "keywords": ["stylelint", "stylelint-plugin", "css", "less"],
+  "keywords": [
+    "stylelint",
+    "stylelint-plugin",
+    "css",
+    "less"
+  ],
   "homepage": "https://github.com/stylelint-less/stylelint-less#readme",
   "bugs": {
     "url": "https://github.com/stylelint-less/stylelint-less/issues"
@@ -17,12 +22,15 @@
     "name": "Sivantarajan",
     "url": "https://github.com/ssivanatarajan/"
   },
-  "types": "index.d.ts",
   "type": "module",
   "exports": {
     ".": "./dist/index.js"
   },
-  "files": ["dist", "index.d.ts"],
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
   "scripts": {
     "build": "rimraf dist && rollup -c",
     "lint": "tsc --noEmit",
@@ -37,7 +45,9 @@
     ]
   },
   "babel": {
-    "presets": ["@babel/env"]
+    "presets": [
+      "@babel/env"
+    ]
   },
   "prettier": "@stylelint/prettier-config",
   "dependencies": {

@@ -5,10 +5,10 @@ import { isValidVariable, namespace, isStandardSyntaxAtRule } from '../../utils/
 export const ruleName = namespace('no-duplicate-variables');
 
 export const messages = stylelint.utils.ruleMessages(ruleName, {
-	rejected: function(prop) {
+	rejected: function (prop) {
 		return `unexpected duplicate property in "${prop}"`;
 	},
-	invalid: function(variableName) {
+	invalid: function (variableName) {
 		return `Unexpected Invalid variable  "${variableName}"`;
 	},
 });
@@ -18,7 +18,7 @@ const meta = {
 };
 
 const rule = (actual) => {
-	return function(root, result) {
+	return function (root, result) {
 		const validOptions = stylelint.utils.validateOptions(result, ruleName, { actual });
 
 		if (!validOptions) {
@@ -30,7 +30,7 @@ const rule = (actual) => {
 		root.walkRules((rule) => {
 			let variables = [];
 
-			rule.nodes.forEach(function(node) {
+			rule.nodes.forEach(function (node) {
 				if (node.type === 'atrule') {
 					if (!isStandardSyntaxAtRule(node)) {
 						if (!isValidVariable(node)) {
@@ -88,10 +88,10 @@ const rule = (actual) => {
 			}
 		});
 	};
-}
+};
 
 rule.ruleName = ruleName;
 rule.messages = messages;
 rule.meta = meta;
 
-export default rule
+export default rule;

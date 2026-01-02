@@ -12,10 +12,10 @@ import {
 export const ruleName = namespace('color-hex-case');
 
 export const messages = stylelint.utils.ruleMessages(ruleName, {
-	rejected: function(actual, expected) {
+	rejected: function (actual, expected) {
 		return `Expected "${actual}" to be "${expected}"`;
 	},
-	invalid: function(variableName) {
+	invalid: function (variableName) {
 		return `invalid variable "${variableName}"`;
 	},
 });
@@ -24,9 +24,8 @@ const meta = {
 	url: 'https://github.com/stylelint-less/stylelint-less/blob/main/packages/stylelint-less/src/rules/color-hex-case',
 };
 
-
 const rule = (expectation) => {
-	return function(root, result) {
+	return function (root, result) {
 		const validOptions = stylelint.utils.validateOptions(result, ruleName, {
 			actual: expectation,
 			possible: ['lower', 'upper'],
@@ -36,7 +35,7 @@ const rule = (expectation) => {
 			return;
 		}
 
-		root.walkAtRules(function(node) {
+		root.walkAtRules(function (node) {
 			const n = postcss.atRule(node);
 			if (!isStandardSyntaxAtRule(n)) {
 				if (!isValidVariable(n)) {
@@ -71,10 +70,10 @@ const rule = (expectation) => {
 			}
 		});
 	};
-}
+};
 
 rule.ruleName = ruleName;
 rule.messages = messages;
 rule.meta = meta;
 
-export default rule
+export default rule;
