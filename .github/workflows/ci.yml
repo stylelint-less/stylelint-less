@@ -2,12 +2,12 @@ name: continuous-integration
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 concurrency:
-  group: 'continuous-integration'
+  group: "continuous-integration"
   cancel-in-progress: false
 
 jobs:
@@ -18,12 +18,12 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '21.x'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: "24.x"
+          registry-url: "https://registry.npmjs.org"
 
       - uses: pnpm/action-setup@v2
         with:
-          version: 8.12.1
+          version: 10
 
       - run: pnpm i
       - run: pnpm -r build
