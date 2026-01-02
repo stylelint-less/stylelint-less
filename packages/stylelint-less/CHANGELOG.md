@@ -1,3 +1,25 @@
+# stylelint-less
+
+## 3.0.1
+
+### Patch Changes
+
+- f10f008: Fix compatibility with Stylelint 16
+
+## 3.0.0
+
+### Major Changes
+
+- eafa8ea: Export ESM from packages
+
+### Minor Changes
+
+- 0ed0822: Update packages to stylelint 16
+
+### Patch Changes
+
+- 23251e1: Update dependencies to the latest version
+
 ## 2.0.0
 
 ### Major Changes

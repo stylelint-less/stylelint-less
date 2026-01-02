@@ -1,8 +1,6 @@
 import stylelint from 'stylelint';
-import isStandardSyntaxAtRule from 'stylelint/lib/utils/isStandardSyntaxAtRule';
-import isValidHex from 'stylelint/lib/utils/isValidHex';
 import valueParser from 'postcss-value-parser';
-import { isValidVariable, namespace } from '../../utils';
+import { isValidVariable, namespace, isStandardSyntaxAtRule, isValidHex } from '../../utils';
 
 export const ruleName = namespace('color-no-invalid-hex');
 

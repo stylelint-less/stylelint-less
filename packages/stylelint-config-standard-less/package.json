@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-standard-less",
-  "version": "2.0.0",
+  "version": "3.0.1",
   "description": "The standard Less config for Stylelint",
   "keywords": [
     "stylelint",
@@ -22,11 +22,11 @@
   ],
   "dependencies": {
     "stylelint-config-recommended-less": "workspace:^",
-    "stylelint-config-standard": "^34.0.0"
+    "stylelint-config-standard": "^36.0.0"
   },
   "peerDependencies": {
     "postcss": "^8.3.3",
-    "stylelint": "^15.0.0"
+    "stylelint": "^16.0.2"
   },
   "peerDependenciesMeta": {
     "postcss": {

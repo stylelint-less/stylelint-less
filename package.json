@@ -1,13 +1,13 @@
 {
   "name": "stylelint-less-monorepo",
   "private": true,
-  "scripts": {
-    "changeset": "changeset"
-  },
   "prettier": "@stylelint/prettier-config",
   "devDependencies": {
-    "@changesets/cli": "^2.26.2",
+    "@changesets/cli": "^2.27.1",
     "@stylelint/prettier-config": "^3.0.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=21"
   }
 }
