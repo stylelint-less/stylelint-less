@@ -1,5 +1,16 @@
 # stylelint-less
 
+## 4.0.0
+
+### Major Changes
+
+- 434280f: feat: export ESM configuration by default
+
+### Patch Changes
+
+- 571b3d4: chore: types and linter
+- 2da56ff: chore: format code using proper stylelint prettier styles
+
 ## 3.0.1
 
 ### Patch Changes

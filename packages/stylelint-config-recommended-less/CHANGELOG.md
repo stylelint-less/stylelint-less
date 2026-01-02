@@ -1,5 +1,19 @@
 # stylelint-config-recommended-less
 
+## 4.0.0
+
+### Major Changes
+
+- 434280f: feat: export ESM configuration by default
+
+### Patch Changes
+
+- 571b3d4: chore: types and linter
+- Updated dependencies [571b3d4]
+- Updated dependencies [434280f]
+- Updated dependencies [2da56ff]
+  - stylelint-less@4.0.0
+
 ## 3.0.1
 
 ### Patch Changes
