@@ -1,5 +1,11 @@
 # stylelint-config-recommended-less
 
+## 4.0.1
+
+### Patch Changes
+
+- 858a8b1: feat: update stylelint-config-recommended and stylelint-config-standard to latest versions
+
 ## 4.0.0
 
 ### Major Changes
