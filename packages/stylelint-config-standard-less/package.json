@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "stylelint-config-recommended-less": "workspace:^",
-    "stylelint-config-standard": "^39.0.1"
+    "stylelint-config-standard": "^40.0.0"
   },
   "peerDependencies": {
     "postcss": "^8.3.3",
