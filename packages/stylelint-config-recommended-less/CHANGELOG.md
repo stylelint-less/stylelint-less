@@ -1,5 +1,15 @@
 # stylelint-config-recommended-less
 
+## 4.1.0
+
+### Minor Changes
+
+- 2495533: Ignore recommended rules that are incompatible with Less syntax (#104)
+
+### Patch Changes
+
+- ffcec38: npm: bump the production-dependencies group with 2 updates
+
 ## 4.0.1
 
 ### Patch Changes
