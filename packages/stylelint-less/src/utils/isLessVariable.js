@@ -1,12 +1,12 @@
 /**
- * Check if a statement has an block (empty or otherwise).
+ * Check if a statement has a block (empty or otherwise).
  *
- * @param {import('postcss').Container} statement
+ * @param {import('postcss').AtRule | import('postcss-less').AtRule} atRule
  * @return {boolean} True if `statement` has a block (empty or otherwise)
  * @package stylelint
  */
-function hasBlock(statement) {
-	return statement.nodes !== undefined;
+function hasBlock(atRule) {
+	return atRule.nodes !== undefined;
 }
 
 /**
