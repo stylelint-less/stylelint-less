@@ -1,5 +1,14 @@
 # stylelint-config-standard-less
 
+## 4.0.2
+
+### Patch Changes
+
+- ffcec38: npm: bump the production-dependencies group with 2 updates
+- Updated dependencies [ffcec38]
+- Updated dependencies [2495533]
+  - stylelint-config-recommended-less@4.1.0
+
 ## 4.0.1
 
 ### Patch Changes
