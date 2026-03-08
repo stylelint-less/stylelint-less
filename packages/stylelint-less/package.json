@@ -49,7 +49,6 @@
       "@babel/env"
     ]
   },
-  "prettier": "@stylelint/prettier-config",
   "dependencies": {
     "postcss-resolve-nested-selector": "^0.1.1",
     "postcss-value-parser": "4.2.0"
