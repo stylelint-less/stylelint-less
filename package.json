@@ -14,7 +14,7 @@
     "@stylelint/prettier-config": "^4.0.0",
     "@types/node": "^24.10.4",
     "husky": "^9.1.7",
-    "lint-staged": "^16.3.2",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.8.1",
     "prettier-plugin-packagejson": "^3.0.2",
     "typescript": "^5.9.3"
