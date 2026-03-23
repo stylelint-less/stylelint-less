@@ -1,5 +1,11 @@
 # stylelint-less
 
+## 4.1.0
+
+### Minor Changes
+
+- 3d6e4fa: chore: use catalog dependencies for `postcss`, `postcss-less` and `stylelint`.
+
 ## 4.0.0
 
 ### Major Changes
