@@ -3,3 +3,8 @@ packages:
 
 onlyBuiltDependencies:
   - unrs-resolver
+
+catalog:
+  postcss: ^8
+  postcss-less: ^6
+  stylelint: ^17

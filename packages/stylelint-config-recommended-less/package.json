@@ -40,13 +40,13 @@
     "*.{js,cjs,mjs}": "sh -c 'tsc --noEmit'"
   },
   "dependencies": {
-    "postcss-less": "^6.0.0",
+    "postcss-less": "catalog:",
     "stylelint-config-recommended": "^18.0.0",
     "stylelint-less": "workspace:^"
   },
   "peerDependencies": {
-    "postcss": "^8.3.3",
-    "stylelint": "^16.26.1 || ^17.0.0"
+    "postcss": "catalog:",
+    "stylelint": "catalog:"
   },
   "peerDependenciesMeta": {
     "postcss": {
