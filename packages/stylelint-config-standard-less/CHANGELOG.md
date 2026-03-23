@@ -1,5 +1,16 @@
 # stylelint-config-standard-less
 
+## 4.1.0
+
+### Minor Changes
+
+- 3d6e4fa: chore: use catalog dependencies for `postcss`, `postcss-less` and `stylelint`.
+
+### Patch Changes
+
+- Updated dependencies [3d6e4fa]
+  - stylelint-config-recommended-less@4.2.0
+
 ## 4.0.2
 
 ### Patch Changes
