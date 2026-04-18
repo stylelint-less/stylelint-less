@@ -1,2 +1,1 @@
-node scripts/dependabot-changeset.mjs
 pnpm exec lint-staged -r

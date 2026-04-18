@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import { execSync } from 'node:child_process';
-import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname, resolve } from 'node:path';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 
 function exec(command) {
 	try {
@@ -12,14 +12,14 @@ function exec(command) {
 	}
 }
 
-function isDependabotBranch() {
-	const branch = exec('git rev-parse --abbrev-ref HEAD');
-	return branch.startsWith('dependabot/');
+function isProductionDependencies() {
+	const message = exec('git log -1 --pretty=%B');
+	return message.includes('production-dependencies');
 }
 
 function getAffectedPackages() {
-	const staged = exec('git diff --cached --name-only');
-	const files = staged.split('\n').filter(Boolean);
+	const changed = exec('git diff --name-only HEAD~1 HEAD');
+	const files = changed.split('\n').filter(Boolean);
 	const packageJsonFiles = files.filter((file) => file.endsWith('package.json'));
 
 	const packages = [];
@@ -37,34 +37,25 @@ function getAffectedPackages() {
 	return packages;
 }
 
-function hasChangeset() {
-	const changesetsDir = resolve('.changeset');
-	if (!existsSync(changesetsDir)) return false;
-
-	const files = readdirSync(changesetsDir);
-	return files.some((file) => file.endsWith('.md') && file !== 'README.md');
-}
-
 function createChangeset(packages) {
 	const timestamp = Date.now();
 	const filename = resolve('.changeset', `dependabot-${timestamp}.md`);
-
 	const frontmatter = packages.map((pkg) => `"${pkg}": patch`).join('\n');
-	const content = `---
-${frontmatter}
----
-
-Bump NPM dependencies
-`;
+	const content = `---\n${frontmatter}\n---\n\nBump NPM dependencies\n`;
 
 	writeFileSync(filename, content, 'utf8');
-	exec(`git add ${filename}`);
 	console.log(`✓ Created changeset: ${filename}`);
 }
 
-if (isDependabotBranch() && !hasChangeset()) {
-	const packages = getAffectedPackages();
-	if (packages.length > 0) {
-		createChangeset(packages);
-	}
+if (!isProductionDependencies()) {
+	console.log('ℹ Skipping: not production dependencies');
+	process.exit(0);
 }
+
+const packages = getAffectedPackages();
+if (packages.length === 0) {
+	console.log('ℹ No affected packages found');
+	process.exit(0);
+}
+
+createChangeset(packages);
