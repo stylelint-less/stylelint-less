@@ -1,0 +1,12 @@
+{
+	"$schema": "./node_modules/knip/schema.json",
+	"ignoreDependencies": ["prettier-plugin-packagejson"],
+	"workspaces": {
+		"packages/stylelint-config-recommended-less": {
+			"ignoreDependencies": ["stylelint-config-recommended", "stylelint-less"]
+		},
+		"packages/stylelint-config-standard-less": {
+			"ignoreDependencies": ["stylelint-config-standard", "stylelint-config-recommended-less"]
+		}
+	}
+}

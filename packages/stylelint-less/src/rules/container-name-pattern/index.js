@@ -19,10 +19,7 @@ const rule = (primary) => {
 	return function (root, result) {
 		const validOptions = stylelint.utils.validateOptions(result, ruleName, {
 			actual: primary,
-			possible: [
-				(value) => value instanceof RegExp,
-				(value) => typeof value === 'string',
-			],
+			possible: [(value) => value instanceof RegExp, (value) => typeof value === 'string'],
 		});
 
 		if (!validOptions) {
@@ -49,11 +46,7 @@ const rule = (primary) => {
 
 				if (regex.test(value)) return;
 
-				complain(
-					valueIndex + sourceIndex,
-					value,
-					decl
-				);
+				complain(valueIndex + sourceIndex, value, decl);
 			});
 		});
 
@@ -73,11 +66,7 @@ const rule = (primary) => {
 
 				if (regex.test(value)) return;
 
-				complain(
-					paramsIndex + sourceIndex,
-					value,
-					atRule
-				);
+				complain(paramsIndex + sourceIndex, value, atRule);
 			});
 		});
 

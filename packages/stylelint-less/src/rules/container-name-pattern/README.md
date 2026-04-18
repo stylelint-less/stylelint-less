@@ -5,7 +5,8 @@ Specify a pattern for container names (Supports Less variables).
 This rule extends the original stylelint [container-name-pattern](https://stylelint.io/user-guide/rules/container-name-pattern/) rule to support Less variables in container names.
 
 ```less
-@container foo (width > 400px) {}
+@container foo (width > 400px) {
+}
 /**        ^|
  * The pattern of this */
 ```
@@ -29,7 +30,8 @@ Given:
 The following patterns are considered problems:
 
 ```less
-@container bar {}
+@container bar {
+}
 
 .foo {
   container-name: bar;
@@ -40,12 +42,14 @@ The following patterns are considered problems:
 }
 ```
 
-The following patterns are *not* considered problems:
+The following patterns are _not_ considered problems:
 
 ```less
-@container foo-bar {}
+@container foo-bar {
+}
 
-@container @container-name (width < 400px) {}
+@container @container-name (width < 400px) {
+}
 
 .foo {
   container-name: foo-bar;

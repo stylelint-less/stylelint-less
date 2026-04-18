@@ -45,7 +45,6 @@
     "stylelint-less": "workspace:^"
   },
   "peerDependencies": {
-    "postcss": "catalog:",
     "stylelint": "catalog:"
   },
   "peerDependenciesMeta": {

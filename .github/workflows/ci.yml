@@ -27,5 +27,6 @@ jobs:
           cache: pnpm
 
       - run: pnpm i --frozen-lockfile
+      - run: pnpm knip
       - run: pnpm -r lint
       - run: pnpm -r test

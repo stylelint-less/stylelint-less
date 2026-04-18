@@ -7,8 +7,14 @@ import {
 	isValidHex,
 } from '../../utils/index.js';
 
+/**
+ * @public
+ */
 export const ruleName = namespace('color-no-invalid-hex');
 
+/**
+ * @public
+ */
 export const messages = stylelint.utils.ruleMessages(ruleName, {
 	rejected: function (value) {
 		return `Unexpected invalid hex color "${value}"`;
