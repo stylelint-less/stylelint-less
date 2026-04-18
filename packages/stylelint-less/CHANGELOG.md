@@ -1,5 +1,15 @@
 # stylelint-less
 
+## 4.2.0
+
+### Minor Changes
+
+- ab67f86: Add `less/container-name-pattern` rule to validate container names while supporting Less variables (#104)
+
+### Patch Changes
+
+- 784792e: Add `less/declaration-property-value-no-unknown` rule. (#104)
+
 ## 4.1.0
 
 ### Minor Changes
