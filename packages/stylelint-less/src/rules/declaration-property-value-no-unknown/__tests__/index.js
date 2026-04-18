@@ -58,6 +58,13 @@ testRule({
 		},
 		{
 			code: dedent`
+				@color-red-1: #ff0000;
+				a { border-top: 7px solid @color-red-1; }
+			`,
+			description: 'Multiple data types with Less variable (issue #91)',
+		},
+		{
+			code: dedent`
 				@spacer-3: 0.75rem;
 				a { transform: translate(-@spacer-3, 0); }
 			`,
