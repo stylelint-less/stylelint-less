@@ -1,5 +1,11 @@
 # stylelint-less
 
+## 4.2.1
+
+### Patch Changes
+
+- e9cd35c: Remove unused dependencies.
+
 ## 4.2.0
 
 ### Minor Changes
