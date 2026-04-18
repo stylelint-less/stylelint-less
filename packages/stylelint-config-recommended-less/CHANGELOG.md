@@ -1,5 +1,13 @@
 # stylelint-config-recommended-less
 
+## 4.2.1
+
+### Patch Changes
+
+- e9cd35c: Remove unused dependencies.
+- Updated dependencies [e9cd35c]
+  - stylelint-less@4.2.1
+
 ## 4.2.0
 
 ### Minor Changes
