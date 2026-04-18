@@ -83,21 +83,9 @@ importers:
       '@types/css-tree':
         specifier: ^2.3.11
         version: 2.3.11
-      '@types/is-plain-object':
-        specifier: ^2.0.4
-        version: 2.0.4
-      css:
-        specifier: link:@types/mdn-data/css
-        version: link:@types/mdn-data/css
       css-tree:
         specifier: ^3.2.1
         version: 3.2.1
-      is-plain-object:
-        specifier: ^5.0.0
-        version: 5.0.0
-      mdn-data:
-        specifier: ^2.28.0
-        version: 2.28.0
       postcss:
         specifier: 'catalog:'
         version: 8.5.10
@@ -1037,10 +1025,6 @@ packages:
 
   '@types/css-tree@2.3.11':
     resolution: {integrity: sha512-aEokibJOI77uIlqoBOkVbaQGC9zII0A+JH1kcTNKW2CwyYWD8KM6qdo+4c77wD3wZOQfJuNWAr9M4hdk+YhDIg==}
-
-  '@types/is-plain-object@2.0.4':
-    resolution: {integrity: sha512-najbe//S/ThT7nEh+iLmXNUFMWQHf7x2QUrsMgtF/apA8dJl8rCsfWr9f8XG9nBo+NyT5TbT92IFIJji9ZmsRQ==}
-    deprecated: This is a stub types definition for is-plain-object (https://github.com/jonschlinkert/is-plain-object). is-plain-object provides its own type definitions, so you don't need @types/is-plain-object installed!
 
   '@types/istanbul-lib-coverage@2.0.6':
     resolution: {integrity: sha512-2QF/t/auWm0lsy8XtKVPG19v3sSOQlJe/YHZgfjb/KBBHOGSV+J2q/S671rcq9uTBrLAXmZpqJiaQbMT+zNU1w==}
@@ -2068,9 +2052,6 @@ packages:
 
   mdn-data@2.27.1:
     resolution: {integrity: sha512-9Yubnt3e8A0OKwxYSXyhLymGW4sCufcLG6VdiDdUGVkPhpqLxlvP5vl1983gQjJl3tqbrM731mjaZaP68AgosQ==}
-
-  mdn-data@2.28.0:
-    resolution: {integrity: sha512-uy9AS1yt+wW5eUEefgE3lOpqPghanUttycV0GXKbiXyBjwvbeE8XPj4u1C+voRfz7dEjwU4NDHTMfZ/s/JtZrQ==}
 
   meow@14.1.0:
     resolution: {integrity: sha512-EDYo6VlmtnumlcBCbh1gLJ//9jvM/ndXHfVXIFrZVr6fGcwTUyCTFNTLCKuY3ffbK8L/+3Mzqnd58RojiZqHVw==}
@@ -3966,10 +3947,6 @@ snapshots:
 
   '@types/css-tree@2.3.11': {}
 
-  '@types/is-plain-object@2.0.4':
-    dependencies:
-      is-plain-object: 5.0.0
-
   '@types/istanbul-lib-coverage@2.0.6': {}
 
   '@types/istanbul-lib-report@3.0.3':
@@ -5117,8 +5094,6 @@ snapshots:
   mathml-tag-names@4.0.0: {}
 
   mdn-data@2.27.1: {}
-
-  mdn-data@2.28.0: {}
 
   meow@14.1.0: {}
 
