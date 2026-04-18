@@ -9,7 +9,6 @@
 		"noEmit": true,
 		"strict": false,
 		"noImplicitAny": false,
-		"baseUrl": ".",
 		"types": ["node"]
 	}
 }
