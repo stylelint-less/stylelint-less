@@ -33,7 +33,7 @@ jobs:
       - name: Create changeset
         run: node scripts/dependabot-changeset.mjs
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'chore: add changeset for dependabot'
           file_pattern: '.changeset/*.md'
