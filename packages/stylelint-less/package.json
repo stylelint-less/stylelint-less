@@ -56,10 +56,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
-    "@babel/preset-env": "^7.29.3",
+    "@babel/preset-env": "^7.29.5",
     "@types/jest": "^30.0.0",
     "@types/postcss-less": "^4.0.7",
-    "jest": "^30.3.0",
+    "jest": "^30.4.2",
     "jest-preset-stylelint": "^9.1.0",
     "postcss-less": "catalog:",
     "stylelint": "catalog:"
