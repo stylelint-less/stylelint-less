@@ -55,12 +55,12 @@
     "postcss-value-parser": "4.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.0",
-    "@babel/preset-env": "^7.29.3",
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
     "@types/jest": "^30.0.0",
     "@types/postcss-less": "^4.0.7",
-    "jest": "^30.3.0",
-    "jest-preset-stylelint": "^9.1.0",
+    "jest": "^30.4.2",
+    "jest-preset-stylelint": "^9.2.0",
     "postcss-less": "catalog:",
     "stylelint": "catalog:"
   },
