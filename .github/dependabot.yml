@@ -22,3 +22,5 @@ updates:
         dependency-type: 'development'
     ignore:
       - dependency-name: '@types/node'
+      - dependency-name: 'postcss'
+      - dependency-name: 'stylelint'
