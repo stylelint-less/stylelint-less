@@ -1,5 +1,11 @@
 # stylelint-less
 
+## 4.2.2
+
+### Patch Changes
+
+- 1bc950b: Bump `@types/css-tree` to 3.2.0.
+
 ## 4.2.1
 
 ### Patch Changes
