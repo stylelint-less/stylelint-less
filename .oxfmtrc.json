@@ -1,0 +1,23 @@
+{
+	"$schema": "./node_modules/oxfmt/configuration_schema.json",
+	"arrowParens": "always",
+	"endOfLine": "lf",
+	"sortPackageJson": false,
+	"printWidth": 100,
+	"singleQuote": true,
+	"trailingComma": "all",
+	"useTabs": true,
+	"ignorePatterns": ["pnpm-lock.yaml"],
+	"overrides": [
+		{
+			"files": ["package.json", "*.md"],
+			"options": {
+				"printWidth": 80,
+				"singleQuote": false,
+				"tabWidth": 2,
+				"trailingComma": "none",
+				"useTabs": false
+			}
+		}
+	]
+}
