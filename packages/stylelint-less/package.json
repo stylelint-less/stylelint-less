@@ -35,8 +35,8 @@
     "index.d.ts"
   ],
   "scripts": {
-    "lint": "tsc --noEmit",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "typecheck": "tsc --noEmit"
   },
   "lint-staged": {
     "*.{js,mjs,cjs}": [

@@ -34,7 +34,7 @@
     "index.d.ts"
   ],
   "scripts": {
-    "lint": "tsc --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "lint-staged": {
     "*.{js,cjs,mjs}": "sh -c 'tsc --noEmit'"

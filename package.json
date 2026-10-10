@@ -4,9 +4,9 @@
   "scripts": {
     "format": "prettier --write .",
     "knip": "knip",
-    "lint": "pnpm -r lint",
     "prepare": "husky",
-    "test": "pnpm -r test"
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
   },
   "lint-staged": {
     "*.{js,json,md,mjs,ts,yml}": "prettier --write"
