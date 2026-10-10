@@ -13,15 +13,15 @@
   },
   "prettier": "@stylelint/prettier-config",
   "devDependencies": {
-    "@changesets/cli": "^2.31.0",
+    "@changesets/cli": "^3.0.1",
     "@stylelint/prettier-config": "^4.0.0",
     "@types/node": "^24.10.4",
     "husky": "^9.1.7",
-    "knip": "^6.10.0",
-    "lint-staged": "^16.4.0",
-    "prettier": "^3.8.3",
+    "knip": "^6.32.2",
+    "lint-staged": "^17.3.0",
+    "prettier": "^3.9.6",
     "prettier-plugin-packagejson": "^3.0.2",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.2"
   },
   "engines": {
     "node": ">=21"
