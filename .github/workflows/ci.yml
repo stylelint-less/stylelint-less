@@ -27,6 +27,6 @@ jobs:
           cache: pnpm
 
       - run: pnpm i --frozen-lockfile
-      - run: pnpm knip
+      - run: pnpm fallow
       - run: pnpm -r typecheck
       - run: pnpm -r test

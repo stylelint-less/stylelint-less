@@ -1,71 +1,71 @@
 {
-  "name": "stylelint-less",
-  "version": "4.2.1",
-  "description": "A collection of Less specific rules for stylelint",
-  "keywords": [
-    "stylelint",
-    "stylelint-plugin",
-    "css",
-    "less"
-  ],
-  "homepage": "https://github.com/stylelint-less/stylelint-less#readme",
-  "bugs": {
-    "url": "https://github.com/stylelint-less/stylelint-less/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stylelint-less/stylelint-less.git",
-    "directory": "packages/stylelint-less"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Sivantarajan",
-    "url": "https://github.com/ssivanatarajan/"
-  },
-  "type": "module",
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "import": "./src/index.js"
-    }
-  },
-  "files": [
-    "src/**/*.js",
-    "!**/__tests__/*.js",
-    "index.d.ts"
-  ],
-  "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "typecheck": "tsc --noEmit"
-  },
-  "lint-staged": {
-    "*.{js,mjs,cjs}": [
-      "sh -c 'tsc --noEmit'",
-      "node --experimental-vm-modules node_modules/jest/bin/jest.js --bail --findRelatedTests"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "@babel/env"
-    ]
-  },
-  "dependencies": {
-    "@types/css-tree": "^3.2.0",
-    "css-tree": "^3.2.1",
-    "postcss-value-parser": "4.2.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^8.0.1",
-    "@babel/preset-env": "^8.0.2",
-    "@types/jest": "^30.0.0",
-    "@types/postcss-less": "^4.0.7",
-    "jest": "^30.4.2",
-    "jest-preset-stylelint": "^9.2.0",
-    "postcss-less": "catalog:",
-    "stylelint": "catalog:"
-  },
-  "peerDependencies": {
-    "postcss": "catalog:",
-    "stylelint": "catalog:"
-  }
+	"name": "stylelint-less",
+	"version": "4.2.1",
+	"description": "A collection of Less specific rules for stylelint",
+	"keywords": [
+		"css",
+		"less",
+		"stylelint",
+		"stylelint-plugin"
+	],
+	"homepage": "https://github.com/stylelint-less/stylelint-less#readme",
+	"bugs": {
+		"url": "https://github.com/stylelint-less/stylelint-less/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Sivantarajan",
+		"url": "https://github.com/ssivanatarajan/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stylelint-less/stylelint-less.git",
+		"directory": "packages/stylelint-less"
+	},
+	"files": [
+		"src/**/*.js",
+		"!**/__tests__/*.js",
+		"index.d.ts"
+	],
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"import": "./src/index.js"
+		}
+	},
+	"scripts": {
+		"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@types/css-tree": "^3.2.0",
+		"css-tree": "^3.2.1",
+		"postcss-value-parser": "4.2.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^8.0.1",
+		"@babel/preset-env": "^8.0.2",
+		"@types/jest": "^30.0.0",
+		"@types/postcss-less": "^4.0.7",
+		"jest": "^30.4.2",
+		"jest-preset-stylelint": "^9.2.0",
+		"postcss-less": "catalog:",
+		"stylelint": "catalog:"
+	},
+	"peerDependencies": {
+		"postcss": "catalog:",
+		"stylelint": "catalog:"
+	},
+	"lint-staged": {
+		"*.{js,mjs,cjs}": [
+			"sh -c 'tsc --noEmit'",
+			"node --experimental-vm-modules node_modules/jest/bin/jest.js --bail --findRelatedTests"
+		]
+	},
+	"babel": {
+		"presets": [
+			"@babel/env"
+		]
+	}
 }

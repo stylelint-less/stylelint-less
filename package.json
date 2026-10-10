@@ -1,29 +1,26 @@
 {
-  "name": "stylelint-less-monorepo",
-  "private": true,
-  "scripts": {
-    "format": "prettier --write .",
-    "knip": "knip",
-    "prepare": "husky",
-    "test": "pnpm -r test",
-    "typecheck": "pnpm -r typecheck"
-  },
-  "lint-staged": {
-    "*.{js,json,md,mjs,ts,yml}": "prettier --write"
-  },
-  "prettier": "@stylelint/prettier-config",
-  "devDependencies": {
-    "@changesets/cli": "^3.0.1",
-    "@stylelint/prettier-config": "^4.0.0",
-    "@types/node": "^24.10.4",
-    "husky": "^9.1.7",
-    "knip": "^6.32.2",
-    "lint-staged": "^17.3.0",
-    "prettier": "^3.9.6",
-    "prettier-plugin-packagejson": "^3.0.2",
-    "typescript": "^7.0.2"
-  },
-  "engines": {
-    "node": ">=21"
-  }
+	"name": "stylelint-less-monorepo",
+	"private": true,
+	"scripts": {
+		"format": "oxfmt",
+		"fallow": "fallow dead-code",
+		"prepare": "husky",
+		"test": "pnpm -r test",
+		"typecheck": "pnpm -r typecheck"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^3.0.1",
+		"@types/node": "^24.10.4",
+		"fallow": "^3.33.1",
+		"husky": "^9.1.7",
+		"lint-staged": "^17.3.0",
+		"oxfmt": "^0.72.0",
+		"typescript": "^7.0.2"
+	},
+	"lint-staged": {
+		"*.{js,json,md,mjs,ts,yml}": "oxfmt --no-error-on-unmatched-pattern"
+	},
+	"engines": {
+		"node": ">=21"
+	}
 }
