@@ -4,6 +4,5 @@
 	"printWidth": 100,
 	"singleQuote": true,
 	"trailingComma": "all",
-	"useTabs": false,
 	"ignorePatterns": ["pnpm-lock.yaml"]
 }
