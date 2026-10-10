@@ -1,14 +1,14 @@
 {
-	"compilerOptions": {
-		"module": "nodenext",
-		"moduleResolution": "nodenext",
-		"target": "es2022",
-		"lib": ["es2023"],
-		"checkJs": true,
-		"allowJs": true,
-		"noEmit": true,
-		"strict": false,
-		"noImplicitAny": false,
-		"types": ["node"]
-	}
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "es2022",
+    "lib": ["es2023"],
+    "checkJs": true,
+    "allowJs": true,
+    "noEmit": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "types": ["node"]
+  }
 }

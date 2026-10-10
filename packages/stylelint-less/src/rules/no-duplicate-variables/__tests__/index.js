@@ -1,39 +1,39 @@
 import { messages, ruleName } from '..';
 
 testRule({
-	ruleName,
-	config: [true],
-	customSyntax: 'postcss-less',
+  ruleName,
+  config: [true],
+  customSyntax: 'postcss-less',
 
-	accept: [
-		{
-			code: dedent`
+  accept: [
+    {
+      code: dedent`
 				@a: 1;
 			`,
-			description: 'A single variable declaration',
-		},
-	],
+      description: 'A single variable declaration',
+    },
+  ],
 
-	reject: [
-		{
-			code: dedent`
+  reject: [
+    {
+      code: dedent`
 				@a: 1;
 				@a: 2;
 			`,
-			description: 'A variable being re-declared',
-			message: messages.rejected('a'),
-		},
-	],
+      description: 'A variable being re-declared',
+      message: messages.rejected('a'),
+    },
+  ],
 });
 
 testRule({
-	ruleName,
-	config: [true],
-	customSyntax: 'postcss-less',
+  ruleName,
+  config: [true],
+  customSyntax: 'postcss-less',
 
-	accept: [
-		{
-			code: dedent`
+  accept: [
+    {
+      code: dedent`
 				@spacer-directions: top, right, bottom, left;
 				@spacer-values: 1, 2, 3, 4;
 				
@@ -53,18 +53,18 @@ testRule({
 					})
 				});
 			`,
-			description: 'Multiple each loops',
-		},
-	],
+      description: 'Multiple each loops',
+    },
+  ],
 
-	reject: [
-		{
-			code: dedent`
+  reject: [
+    {
+      code: dedent`
 				@each: 1;
 				@each: 2;
 			`,
-			description: 'A variable named `each` being re-declared',
-			message: messages.rejected('each'),
-		},
-	],
+      description: 'A variable named `each` being re-declared',
+      message: messages.rejected('each'),
+    },
+  ],
 });

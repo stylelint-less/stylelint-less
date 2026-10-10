@@ -6,10 +6,10 @@ import declarationPropertyValueNoUnknown from './declaration-property-value-no-u
 import containerNamePattern from './container-name-pattern/index.js';
 
 export default {
-	'color-no-hex': colorNoHex,
-	'color-no-invalid-hex': colorNoInvalidHex,
-	'no-duplicate-variables': noDuplicateVariables,
-	'color-hex-case': colorHexCase,
-	'declaration-property-value-no-unknown': declarationPropertyValueNoUnknown,
-	'container-name-pattern': containerNamePattern,
+  'color-no-hex': colorNoHex,
+  'color-no-invalid-hex': colorNoInvalidHex,
+  'no-duplicate-variables': noDuplicateVariables,
+  'color-hex-case': colorHexCase,
+  'declaration-property-value-no-unknown': declarationPropertyValueNoUnknown,
+  'container-name-pattern': containerNamePattern,
 };

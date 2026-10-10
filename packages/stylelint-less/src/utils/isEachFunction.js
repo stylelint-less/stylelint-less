@@ -5,5 +5,5 @@
  * @returns {boolean}
  */
 export default function isEachFunction(atRule) {
-	return 'function' in atRule && atRule.function && atRule.name === 'each';
+  return 'function' in atRule && atRule.function && atRule.name === 'each';
 }

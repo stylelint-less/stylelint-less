@@ -1,15 +1,15 @@
 {
-	"$schema": "./node_modules/fallow/schema.json",
-	"ignoreDependencies": [
-		"fallow",
-		"@babel/preset-env",
-		"stylelint-less",
-		"stylelint-config-recommended-less",
-		"stylelint-config-standard-less"
-	],
-	"ignoreExports": [
-		{ "file": "packages/stylelint-less/src/rules/*/index.js", "exports": ["messages", "ruleName"] },
-		{ "file": "packages/stylelint-less/src/utils/index.js", "exports": ["isLessVariable"] }
-	],
-	"ignoreDependencyOverrides": [{ "package": "smol-toml" }]
+  "$schema": "./node_modules/fallow/schema.json",
+  "ignoreDependencies": [
+    "fallow",
+    "@babel/preset-env",
+    "stylelint-less",
+    "stylelint-config-recommended-less",
+    "stylelint-config-standard-less"
+  ],
+  "ignoreExports": [
+    { "file": "packages/stylelint-less/src/rules/*/index.js", "exports": ["messages", "ruleName"] },
+    { "file": "packages/stylelint-less/src/utils/index.js", "exports": ["isLessVariable"] }
+  ],
+  "ignoreDependencyOverrides": [{ "package": "smol-toml" }]
 }
