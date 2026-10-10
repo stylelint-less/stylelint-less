@@ -4,10 +4,10 @@ Disallow the usage of hex colors.
 
 ```less
 a {
-	color: #fff;
+  color: #fff;
 } // ✗ avoid
 
 a {
-	color: red;
+  color: red;
 } // ✓ ok
 ```

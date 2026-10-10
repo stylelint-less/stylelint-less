@@ -1,8 +1,8 @@
 {
-	"$schema": "./node_modules/oxfmt/configuration_schema.json",
-	"arrowParens": "always",
-	"printWidth": 100,
-	"singleQuote": true,
-	"trailingComma": "all",
-	"ignorePatterns": ["pnpm-lock.yaml"]
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "arrowParens": "always",
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "ignorePatterns": ["pnpm-lock.yaml"]
 }

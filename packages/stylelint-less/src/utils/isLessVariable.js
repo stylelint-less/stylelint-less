@@ -6,7 +6,7 @@
  * @package stylelint
  */
 function hasBlock(atRule) {
-	return atRule.nodes !== undefined;
+  return atRule.nodes !== undefined;
 }
 
 /**
@@ -17,8 +17,8 @@ function hasBlock(atRule) {
  * @returns {boolean}
  */
 export default function isLessVariable(atRule) {
-	return (
-		(atRule.type === 'atrule' && 'variable' in atRule && atRule.variable && !hasBlock(atRule)) ||
-		false
-	);
+  return (
+    (atRule.type === 'atrule' && 'variable' in atRule && atRule.variable && !hasBlock(atRule)) ||
+    false
+  );
 }

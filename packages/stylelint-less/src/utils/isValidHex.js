@@ -8,5 +8,5 @@ const IS_VALID_HEX = /^#(?:[\da-f]{3,4}|[\da-f]{6}|[\da-f]{8})$/i;
  * @package stylelint
  */
 export default function isValidHex(value) {
-	return IS_VALID_HEX.test(value);
+  return IS_VALID_HEX.test(value);
 }
