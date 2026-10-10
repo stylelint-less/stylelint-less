@@ -1,48 +1,48 @@
 {
-  "name": "stylelint-config-standard-less",
-  "version": "4.1.0",
-  "description": "The standard Less config for Stylelint",
-  "keywords": [
-    "less",
-    "standard",
-    "stylelint",
-    "stylelint-config"
-  ],
-  "license": "MIT",
-  "author": "Crazy Urus <crazyurus@vip.qq.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stylelint-less/stylelint-less.git",
-    "directory": "packages/stylelint-config-standard-less"
-  },
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
-  "type": "module",
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "import": "./index.js"
-    }
-  },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "stylelint-config-recommended-less": "workspace:^",
-    "stylelint-config-standard": "^40.0.0"
-  },
-  "peerDependencies": {
-    "postcss": "catalog:",
-    "stylelint": "catalog:"
-  },
-  "peerDependenciesMeta": {
-    "postcss": {
-      "optional": true
-    }
-  },
-  "lint-staged": {
-    "*.{js,cjs,mjs}": "sh -c 'tsc --noEmit'"
-  }
+	"name": "stylelint-config-standard-less",
+	"version": "4.1.0",
+	"description": "The standard Less config for Stylelint",
+	"keywords": [
+		"less",
+		"standard",
+		"stylelint",
+		"stylelint-config"
+	],
+	"license": "MIT",
+	"author": "Crazy Urus <crazyurus@vip.qq.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stylelint-less/stylelint-less.git",
+		"directory": "packages/stylelint-config-standard-less"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"import": "./index.js"
+		}
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"stylelint-config-recommended-less": "workspace:^",
+		"stylelint-config-standard": "^40.0.0"
+	},
+	"peerDependencies": {
+		"postcss": "catalog:",
+		"stylelint": "catalog:"
+	},
+	"peerDependenciesMeta": {
+		"postcss": {
+			"optional": true
+		}
+	},
+	"lint-staged": {
+		"*.{js,cjs,mjs}": "sh -c 'tsc --noEmit'"
+	}
 }

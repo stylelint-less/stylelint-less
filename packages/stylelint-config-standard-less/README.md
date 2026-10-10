@@ -19,6 +19,6 @@ Add the standard configuration to your `stylelint` config:
 
 ```json
 {
-  "extends": "stylelint-config-standard-less"
+	"extends": "stylelint-config-standard-less"
 }
 ```

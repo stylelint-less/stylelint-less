@@ -4,7 +4,7 @@ Disallow unknown values for properties within declarations.
 
 ```less
 a {
-  top: unknown;
+	top: unknown;
 }
 /** ^|    ^|
  * property and value pairs like these */
@@ -37,13 +37,13 @@ The following patterns are considered problems:
 
 ```less
 a {
-  top: red;
+	top: red;
 }
 ```
 
 ```less
 a {
-  top: unknown;
+	top: unknown;
 }
 ```
 
@@ -51,37 +51,37 @@ The following patterns are _not_ considered problems:
 
 ```less
 a {
-  top: 0;
+	top: 0;
 }
 ```
 
 ```less
 a {
-  top: var(--foo);
+	top: var(--foo);
 }
 ```
 
 ```less
 a {
-  padding: 0 @spacer-4;
+	padding: 0 @spacer-4;
 }
 ```
 
 ```less
 a {
-  border: 1px solid @blue;
+	border: 1px solid @blue;
 }
 ```
 
 ```less
 a {
-  transform: translate(-@spacer-3, 0);
+	transform: translate(-@spacer-3, 0);
 }
 ```
 
 ```less
 a {
-  width: calc(100% + @spacer-3 + @spacer-3);
+	width: calc(100% + @spacer-3 + @spacer-3);
 }
 ```
 
@@ -95,10 +95,10 @@ Given:
 
 ```json
 {
-  "top": ["unknown"],
-  "/^margin-/": "/^@/",
-  "padding": "/.+/",
-  "/.+/": "--unknown-value"
+	"top": ["unknown"],
+	"/^margin-/": "/^@/",
+	"padding": "/.+/",
+	"/.+/": "--unknown-value"
 }
 ```
 
@@ -106,25 +106,25 @@ The following patterns are _not_ considered problems:
 
 ```less
 a {
-  top: unknown;
+	top: unknown;
 }
 ```
 
 ```less
 a {
-  margin-top: @foo-bar;
+	margin-top: @foo-bar;
 }
 ```
 
 ```less
 a {
-  padding: invalid;
+	padding: invalid;
 }
 ```
 
 ```less
 a {
-  width: --unknown-value;
+	width: --unknown-value;
 }
 ```
 
@@ -142,13 +142,13 @@ The following patterns are _not_ considered problems:
 
 ```less
 a {
-  size: 0;
+	size: 0;
 }
 ```
 
 ```less
 a {
-  size: 10px;
+	size: 10px;
 }
 ```
 
@@ -162,8 +162,8 @@ Given:
 
 ```json
 {
-  "propertiesSyntax": { "top": "| <--foo()>" },
-  "typesSyntax": { "--foo()": "--foo( <length-percentage> )" }
+	"propertiesSyntax": { "top": "| <--foo()>" },
+	"typesSyntax": { "--foo()": "--foo( <length-percentage> )" }
 }
 ```
 
@@ -171,12 +171,12 @@ The following patterns are _not_ considered problems:
 
 ```less
 a {
-  top: --foo(0);
+	top: --foo(0);
 }
 ```
 
 ```less
 a {
-  top: --foo(10px);
+	top: --foo(10px);
 }
 ```

@@ -23,7 +23,7 @@ Given:
 
 ```json
 {
-  "less/container-name-pattern": "foo-.+"
+	"less/container-name-pattern": "foo-.+"
 }
 ```
 
@@ -34,11 +34,11 @@ The following patterns are considered problems:
 }
 
 .foo {
-  container-name: bar;
+	container-name: bar;
 }
 
 .foo {
-  container: baz / inline-size;
+	container: baz / inline-size;
 }
 ```
 
@@ -52,18 +52,18 @@ The following patterns are _not_ considered problems:
 }
 
 .foo {
-  container-name: foo-bar;
+	container-name: foo-bar;
 }
 
 .foo {
-  container-name: @container-name;
+	container-name: @container-name;
 }
 
 .foo {
-  container: foo-baz / inline-size;
+	container: foo-baz / inline-size;
 }
 
 .foo {
-  container: @container-var / inline-size;
+	container: @container-var / inline-size;
 }
 ```

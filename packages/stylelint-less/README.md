@@ -14,12 +14,12 @@ Add the `stylelint-less` plugin to your configuration, and set the rules you wan
 
 ```json
 {
-  "plugins": ["stylelint-less"],
-  "rules": {
-    "at-rule-no-unknown": null,
-    "color-no-invalid-hex": true,
-    "less/color-no-invalid-hex": true
-  }
+	"plugins": ["stylelint-less"],
+	"rules": {
+		"at-rule-no-unknown": null,
+		"color-no-invalid-hex": true,
+		"less/color-no-invalid-hex": true
+	}
 }
 ```
 

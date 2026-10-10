@@ -1,55 +1,55 @@
 {
-  "name": "stylelint-config-recommended-less",
-  "version": "4.2.1",
-  "description": "The recommended Less config for Stylelint",
-  "keywords": [
-    "less",
-    "recommended",
-    "stylelint",
-    "stylelint-config"
-  ],
-  "homepage": "https://github.com/stylelint-less/stylelint-less#readme",
-  "bugs": {
-    "url": "https://github.com/stylelint-less/stylelint-less/issues"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Sivantarajan",
-    "url": "https://github.com/ssivanatarajan/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stylelint-less/stylelint-less.git",
-    "directory": "packages/stylelint-config-recommended-less"
-  },
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
-  "type": "module",
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "import": "./index.js"
-    }
-  },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "postcss-less": "catalog:",
-    "stylelint-config-recommended": "^18.0.0",
-    "stylelint-less": "workspace:^"
-  },
-  "peerDependencies": {
-    "stylelint": "catalog:"
-  },
-  "peerDependenciesMeta": {
-    "postcss": {
-      "optional": true
-    }
-  },
-  "lint-staged": {
-    "*.{js,cjs,mjs}": "sh -c 'tsc --noEmit'"
-  }
+	"name": "stylelint-config-recommended-less",
+	"version": "4.2.1",
+	"description": "The recommended Less config for Stylelint",
+	"keywords": [
+		"less",
+		"recommended",
+		"stylelint",
+		"stylelint-config"
+	],
+	"homepage": "https://github.com/stylelint-less/stylelint-less#readme",
+	"bugs": {
+		"url": "https://github.com/stylelint-less/stylelint-less/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Sivantarajan",
+		"url": "https://github.com/ssivanatarajan/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stylelint-less/stylelint-less.git",
+		"directory": "packages/stylelint-config-recommended-less"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"import": "./index.js"
+		}
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"postcss-less": "catalog:",
+		"stylelint-config-recommended": "^18.0.0",
+		"stylelint-less": "workspace:^"
+	},
+	"peerDependencies": {
+		"stylelint": "catalog:"
+	},
+	"peerDependenciesMeta": {
+		"postcss": {
+			"optional": true
+		}
+	},
+	"lint-staged": {
+		"*.{js,cjs,mjs}": "sh -c 'tsc --noEmit'"
+	}
 }

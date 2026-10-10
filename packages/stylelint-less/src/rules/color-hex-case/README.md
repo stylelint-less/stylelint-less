@@ -10,10 +10,10 @@ Can be `lower` or `upper`.
 
 ```less
 a {
-  color: #fff;
+	color: #fff;
 } // ✓ ok
 a {
-  color: #fff;
+	color: #fff;
 } // ✗ error
 ```
 
@@ -21,9 +21,9 @@ a {
 
 ```less
 a {
-  color: #fff;
+	color: #fff;
 } // ✓ ok
 a {
-  color: #fff;
+	color: #fff;
 } // ✗ error
 ```
