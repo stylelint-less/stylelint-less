@@ -1,2 +1,2 @@
-pnpm knip
+pnpm fallow
 pnpm exec lint-staged -r
