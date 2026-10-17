@@ -9,12 +9,12 @@
     "typecheck": "pnpm -r typecheck"
   },
   "devDependencies": {
-    "@changesets/cli": "^3.0.1",
+    "@changesets/cli": "^3.0.3",
     "@types/node": "^24.10.4",
     "fallow": "^3.33.1",
     "husky": "^9.1.7",
-    "lint-staged": "^17.3.0",
-    "oxfmt": "^0.72.0",
+    "lint-staged": "^17.6.0",
+    "oxfmt": "^0.73.0",
     "typescript": "^7.0.2"
   },
   "lint-staged": {
