@@ -44,11 +44,11 @@
     "postcss-value-parser": "4.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^8.0.1",
-    "@babel/preset-env": "^8.0.2",
+    "@babel/core": "^8.0.7",
+    "@babel/preset-env": "^8.0.7",
     "@types/jest": "^30.0.0",
     "@types/postcss-less": "^4.0.7",
-    "jest": "^30.4.2",
+    "jest": "^30.5.2",
     "jest-preset-stylelint": "^9.2.0",
     "postcss-less": "catalog:",
     "stylelint": "catalog:"
