@@ -1,6 +1,6 @@
 {
   "name": "stylelint-less",
-  "version": "4.2.2",
+  "version": "5.0.0",
   "description": "A collection of Less specific rules for stylelint",
   "keywords": [
     "css",

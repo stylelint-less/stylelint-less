@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-standard-less",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "The standard Less config for Stylelint",
   "keywords": [
     "less",
