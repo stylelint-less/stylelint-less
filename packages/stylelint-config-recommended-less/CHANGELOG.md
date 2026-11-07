@@ -1,5 +1,16 @@
 # stylelint-config-recommended-less
 
+## 5.0.0
+
+### Major Changes
+
+- 40df05f: Require `stylelint` 18 and Node.js `^22.22.2 || ^24.15.0 || >=26`. Update `postcss-less` to 7, `stylelint-config-recommended` to 19 and `stylelint-config-standard` to 41.
+
+### Patch Changes
+
+- Updated dependencies [40df05f]
+  - stylelint-less@5.0.0
+
 ## 4.2.1
 
 ### Patch Changes
