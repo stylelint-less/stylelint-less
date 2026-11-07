@@ -11,6 +11,5 @@
       "exports": ["messages", "ruleName"]
     },
     { "file": "packages/stylelint-less/src/utils/index.js", "exports": ["isLessVariable"] }
-  ],
-  "ignoreDependencyOverrides": [{ "package": "smol-toml" }]
+  ]
 }

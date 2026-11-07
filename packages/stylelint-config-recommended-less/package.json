@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "postcss-less": "catalog:",
-    "stylelint-config-recommended": "^18.0.0",
+    "stylelint-config-recommended": "^19.0.0",
     "stylelint-less": "workspace:^"
   },
   "peerDependencies": {
