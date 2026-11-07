@@ -3,8 +3,8 @@ packages:
 
 catalog:
   postcss: ^8
-  postcss-less: ^6
-  stylelint: ^17
+  postcss-less: ^7
+  stylelint: ^18
 
 onlyBuiltDependencies:
   - unrs-resolver
