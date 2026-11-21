@@ -44,7 +44,7 @@
     "postcss-value-parser": "4.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^8.1.0",
+    "@babel/core": "^8.1.2",
     "@babel/preset-env": "^8.0.7",
     "@types/jest": "^30.0.0",
     "@types/postcss-less": "^4.0.7",
